@@ -1,8 +1,52 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --navy-900: #0d1117;
+  --navy-800: #161b22;
+  --navy-700: #1e242c;
+  --accent-blue: #1d4ed8;
+  --accent-orange: #f59e0b;
+}
+body {
+  color: white;
+  background: var(--navy-900);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -19px -19px;
+}
+
+
+.pixel-font {
+  font-family: 'PixelFont', monospace;
+  letter-spacing: 0.05em;
+}
+
+.gradient-border {
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, rgba(29, 78, 216, 0.5), rgba(245, 158, 11, 0.5));
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--navy-800);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--navy-700);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-blue);
+}
+
+.custom-navy-gradient {
+  background: linear-gradient(to bottom, var(--navy-bg-start), var(--navy-bg-end));
 }
 
 @theme inline {
@@ -19,8 +63,9 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: 'PixelFont';
+  src: url('/fonts/your-pixel-font.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
