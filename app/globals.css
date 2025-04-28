@@ -63,9 +63,49 @@ body {
   }
 }
 
-@font-face {
-  font-family: 'PixelFont';
-  src: url('/fonts/your-pixel-font.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1f2937;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4b5563; 
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #6b7280; 
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 #1f2937;
+}
+
+.wallet-adapter-button-custom {
+  width: 100%;
+  background-color: #4e44ce;
+  color: white;
+  border-radius: 8px;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wallet-adapter-button-custom:hover {
+  background-color: #5a50d2;
+}
+
+.wallet-adapter-button-custom:disabled {
+  background-color: #2d2d3d;
+  cursor: not-allowed;
 }

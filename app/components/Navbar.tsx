@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function Navbar({ activePage }: { activePage: 'login'|'dashboard' | 'wallet' | 'alerts' }) {
+export default function Navbar({ activePage }: { activePage: 'login'|'dashboard' | 'wallet-tracker' | 'alerts' }) {
   return (
     <nav className="flex justify-between items-center py-4 px-6 bg-navy-800 border-b border-gray-800">
       <div className="flex items-center">
@@ -27,7 +27,7 @@ export default function Navbar({ activePage }: { activePage: 'login'|'dashboard'
         </Link>
         <Link 
           href="/wallet-tracker" 
-          className={`pixel-font ${activePage === 'wallet' ? 'text-white border-b-2 border-blue-500' : 'text-gray-400'}`}
+          className={`pixel-font ${activePage === 'wallet-tracker' ? 'text-white border-b-2 border-blue-500' : 'text-gray-400'}`}
         >
           WALLET TRACKER
         </Link>

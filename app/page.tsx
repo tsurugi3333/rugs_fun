@@ -1,20 +1,11 @@
-'use client'
+'use client';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
-import LoginButton from './components/LoginButton';
 import SocialFooter from './components/SocialFooter';
-import Navbar from './components/Navbar';
+import PhantomLoginButton from './components/PhantomLoginButton';
 
 export default function LoginPage() {
-  const router = useRouter();
-  
-  const handleLogin = () => {
-    router.push('/dashboard');
-  };
-  
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-750 to-gray-800">
-      <Navbar activePage="login"/>
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-800 to-gray-900">
             
       <div className="flex-grow flex flex-col items-center justify-center p-4">
         <div className="w-full max-w-md mx-auto flex flex-col items-center">
@@ -30,12 +21,8 @@ export default function LoginPage() {
           
           <h2 className="pixel-font text-md text-center mb-10 text-white">TRACK BIG MOVES ON SOLANA IN REAL TIME</h2>
           
-          <div className="w-full space-y-4">
-            <LoginButton 
-              icon="/images/phantom.svg"
-              text="Login with Phantom Wallet"
-              onClick={handleLogin}
-            />
+          <div className="w-full space-y-4 text-center">
+            <PhantomLoginButton />
           </div>
         </div>
       </div>
