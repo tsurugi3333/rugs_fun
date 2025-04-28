@@ -48,7 +48,6 @@ export default function WalletTrackerPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   
-  // Effect to fetch data when addressFromQuery is present
   useEffect(() => {
     if (addressFromQuery) {
       setSearchQuery(addressFromQuery);

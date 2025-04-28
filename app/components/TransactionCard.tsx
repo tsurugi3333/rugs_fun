@@ -24,16 +24,15 @@ export default function TransactionCard({
   onAddAlert,
   onTrack
 }: TransactionCardProps) {
+  const walletForTrack = wallet;
   const [copySuccess, setCopySuccess] = useState(false);
   const router = useRouter();
 
-  const displayedWallet = wallet; 
-  const fullWalletAddress = wallet.includes('...') 
-    ? wallet.replace(/^([\w\d]{4})\.{3}([\w\d]{4})$/, "$1$2") 
-    : wallet;
+  const displayedWallet = wallet.substring(0, 4) + "..." + wallet.substring(wallet.length - 4); 
+  const displayedToken = token.substring(0, 4) + "..." + token.substring(token.length - 4);
 
   const handleCopyToClipboard = () => {
-    navigator.clipboard.writeText(fullWalletAddress)
+    navigator.clipboard.writeText(walletForTrack)
       .then(() => {
         setCopySuccess(true);
         setTimeout(() => setCopySuccess(false), 2000);
@@ -44,9 +43,9 @@ export default function TransactionCard({
   };
 
   const handleTrackWallet = () => {
-    onTrack(fullWalletAddress);
+    onTrack(walletForTrack);
     
-    router.push(`/wallet-tracker?address=${encodeURIComponent(fullWalletAddress)}`);
+    router.push(`/wallet-tracker?address=${encodeURIComponent(walletForTrack)}`);
   };
 
   return (
@@ -83,27 +82,27 @@ export default function TransactionCard({
               {copySuccess ? 'Copied full address!' : 'Copy full address'}
             </span>
           </span>
-          {" "}with {walletSize} wallet size {isBuy ? 'bought' : 'sold'} {amount} (${dollarValue}) of {token}
+          {" "}with {walletSize} {isBuy ? 'bought' : 'sold'} {amount} (${dollarValue}) of {displayedToken}
         </span>
       </div>
       
       <div className="flex space-x-4">
         <button 
           className={`px-4 py-1 rounded text-xs ${isAlerted ? 'bg-opacity-25 bg-yellow-600 text-yellow-500' : 'bg-navy-700 hover:bg-navy-600'}`}
-          onClick={() => onAddAlert(fullWalletAddress)}
+          onClick={() => onAddAlert(displayedWallet)}
         >
           {isAlerted ? (
-            <span className="pixel-font">ADDED TO ALERTS</span>
+            <span className="text-xs">ADDED TO ALERTS</span>
           ) : (
-            <span className="pixel-font">ADD TO ALERTS</span>
+            <span className="text-xs">ADD TO ALERTS</span>
           )}
         </button>
         
         <button 
-          className="bg-gray-700 hover:bg-navy-600 px-4 py-1 rounded text-xs"
+          className="bg-gray-700 hover:bg-navy-600 px-4 py-1 rounded text-xs cursor-pointer"
           onClick={handleTrackWallet}
         >
-          <span className="pixel-font">TRACK</span>
+          <span className="text-xs">TRACK</span>
         </button>
       </div>
     </div>

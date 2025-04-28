@@ -30,6 +30,7 @@ export default function DashboardPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [alertedWallets, setAlertedWallets] = useState<Set<string>>(new Set());
   const [isMobile, setIsMobile] = useState(false);
+  const [recentOnly, setRecentOnly] = useState(true);
   
   const walletSizes = [
     { value: '$50k+', label: '$50k+' },
@@ -84,13 +85,20 @@ export default function DashboardPage() {
       const minPositionSize = getPositionSizeValue(selectedPositionSize);
       
       const url = new URL('/api/transactions', window.location.origin);
-      url.searchParams.append('minWalletSize', minWalletSize);
-      url.searchParams.append('minPositionSize', minPositionSize);
+      
+      // Always pass page and limit, regardless of mode
       url.searchParams.append('page', currentPage.toString());
       url.searchParams.append('limit', '10');
       
-      if (searchQuery) {
-        url.searchParams.append('search', searchQuery);
+      if (recentOnly) {
+        url.searchParams.append('recentOnly', 'true');
+      } else {
+        url.searchParams.append('minWalletSize', minWalletSize);
+        url.searchParams.append('minPositionSize', minPositionSize);
+        
+        if (searchQuery) {
+          url.searchParams.append('search', searchQuery);
+        }
       }
       
       const response = await fetch(url.toString());
@@ -113,19 +121,26 @@ export default function DashboardPage() {
     } finally {
       setIsLoading(false);
     }
-  }, [currentPage, selectedWalletSize, selectedPositionSize, customWalletSize, customPositionSize, searchQuery, alertedWallets]);
+  }, [currentPage, selectedWalletSize, selectedPositionSize, customWalletSize, customPositionSize, searchQuery, alertedWallets, recentOnly]);
 
   useEffect(() => {
     fetchTransactions();
-  }, [fetchTransactions]);
+  }, [fetchTransactions, currentPage]); // Re-fetch when page changes
 
   const handleApplyFilters = () => {
-    setCurrentPage(1); 
+    setRecentOnly(false);
+    setCurrentPage(1); // Reset to first page
     fetchTransactions();
+  };
+
+  const handleToggleRecentOnly = () => {
+    setRecentOnly(prev => !prev);
+    setCurrentPage(1); // Reset to first page when toggling modes
   };
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
+    // No need to call fetchTransactions here, it will be triggered by the useEffect
   };
   
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -134,6 +149,7 @@ export default function DashboardPage() {
   
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setRecentOnly(false); // Switch to filter mode when searching
     setCurrentPage(1); // Reset to first page when searching
     fetchTransactions();
   };
@@ -210,6 +226,14 @@ export default function DashboardPage() {
                       onCustomPositionSizeChange={setCustomPositionSize}
                       onApplyFilters={handleApplyFilters}
                     />
+                    <div className="mt-4 pt-4 border-t border-gray-700">
+                      <button 
+                        onClick={handleToggleRecentOnly}
+                        className={`w-full py-2 px-4 rounded-md text-sm ${recentOnly ? 'bg-blue-600' : 'bg-gray-700'}`}
+                      >
+                        {recentOnly ? 'VIEWING RECENT TRANSACTIONS' : 'VIEW RECENT TRANSACTIONS'}
+                      </button>
+                    </div>
                   </div>
                 </details>
               ) : (
@@ -225,6 +249,14 @@ export default function DashboardPage() {
                     onCustomPositionSizeChange={setCustomPositionSize}
                     onApplyFilters={handleApplyFilters}
                   />
+                  <div className="mt-4 pt-4 border-t border-gray-700">
+                    <button 
+                      onClick={handleToggleRecentOnly}
+                      className={`w-full py-2 px-4 rounded-md text-sm ${recentOnly ? 'bg-blue-600' : 'bg-gray-700'}`}
+                    >
+                      {recentOnly ? 'VIEWING RECENT TRANSACTIONS' : 'VIEW RECENT TRANSACTIONS'}
+                    </button>
+                  </div>
                 </div>
               )}
             </div>
@@ -232,7 +264,9 @@ export default function DashboardPage() {
             {/* Transaction Feed */}
             <div className={`${isMobile ? 'order-0' : ''} md:col-span-1 lg:col-span-3`}>
               <div className="min-h-130 bg-gray-900 border border-gray-700 rounded-lg p-3 md:p-6 flex flex-col">
-                <h2 className="pixel-font text-lg md:text-xl mb-4 md:mb-6">DASHBOARD FEED</h2>
+                <h2 className="pixel-font text-lg md:text-xl mb-4 md:mb-6">
+                  {recentOnly ? 'RECENT TRANSACTIONS' : 'FILTERED TRANSACTIONS'}
+                </h2>
                 
                 {/* Content Area - Transaction Cards */}
                 <div className="flex-grow">
@@ -267,7 +301,7 @@ export default function DashboardPage() {
                   )}
                 </div>
                 
-                {/* Pagination - Always at the bottom with mt-auto */}
+                {/* Pagination - Always shown */}
                 <div className="mt-auto pt-4 flex justify-center">
                   <div className="flex bg-gray-700 rounded-md text-xs md:text-sm">
                     <button 
@@ -281,12 +315,12 @@ export default function DashboardPage() {
                     </button>
                     
                     <div className="px-2 md:px-4 py-1 md:py-2">
-                      Page {currentPage} of {totalPages}
+                      Page {currentPage} of {totalPages || 1}
                     </div>
                     
                     <button 
                       onClick={() => handlePageChange(currentPage + 1)}
-                      disabled={currentPage === totalPages || isLoading}
+                      disabled={currentPage === totalPages || isLoading || totalPages === 0}
                       className="px-2 md:px-4 py-1 md:py-2 disabled:opacity-50"
                     >
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20" fill="currentColor">
