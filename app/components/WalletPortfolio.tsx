@@ -90,11 +90,11 @@ export default function WalletPortfolio({
           >
             <path fillRule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clipRule="evenodd" />
           </svg>
-          <span className="pixel-font text-white">{displayAddress}</span>
+          <span className="text-lg text-white">{displayAddress}</span>
         </div>
         <button 
           onClick={() => copyToClipboard(walletAddress)}
-          className={`ml-4 px-4 py-1 border ${copiedAddress === walletAddress ? 'border-green-600 bg-green-900/30' : 'border-gray-700 hover:bg-blue-900'} rounded pixel-font text-xs text-white transition-colors`}
+          className={`text-sm ml-4 px-4 py-1 border ${copiedAddress === walletAddress ? 'border-green-600 bg-green-900/30' : 'border-gray-700 hover:bg-gray-900'} rounded text-xs text-white transition-colors cursor-pointer`}
         >
           {copiedAddress === walletAddress ? 'COPIED!' : 'COPY'}
         </button>
@@ -102,7 +102,7 @@ export default function WalletPortfolio({
       
       {/* Portfolio Tab Content */}
       {activeTab === 'portfolio' && (
-        <div className="min-h-85 overflow-x-auto border border-gray-800 rounded-md">
+        <div className="min-h-85 border border-gray-800 rounded-md">
           <div className="max-h-96 overflow-y-auto">
             <table className="min-w-full">
               <thead className="bg-gray-700 sticky top-0 z-10">
@@ -124,7 +124,7 @@ export default function WalletPortfolio({
                         <span>{token.address.substring(0, 6)}...{token.address.substring(token.address.length - 6)}</span>
                         <button 
                           onClick={() => copyToClipboard(token.address)}
-                          className="ml-2 text-gray-400 hover:text-white"
+                          className="ml-2 text-gray-400 hover:text-white cursor-pointer"
                           title="Copy address"
                         >
                           {copiedAddress === token.address ? (

@@ -28,7 +28,14 @@ export default function DashboardPage() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [totalPages, setTotalPages] = useState(1);
   const [isLoading, setIsLoading] = useState(true);
-  const [alertedWallets, setAlertedWallets] = useState<Set<string>>(new Set());
+  const [alertedWallets, setAlertedWallets] = useState<Set<string>>(() => {
+    // Initialize from localStorage if available
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('alertedWallets');
+      return saved ? new Set(JSON.parse(saved)) : new Set();
+    }
+    return new Set();
+  });
   const [isMobile, setIsMobile] = useState(false);
   const [recentOnly, setRecentOnly] = useState(true);
   
@@ -48,6 +55,12 @@ export default function DashboardPage() {
   ];
 
   useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('alertedWallets', JSON.stringify([...alertedWallets]));
+    }
+  }, [alertedWallets]);
+
+  useEffect(() => {
     const checkIsMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
@@ -60,7 +73,7 @@ export default function DashboardPage() {
   }, []);
 
   const getWalletSizeValue = (walletSize: string): string => {
-    if (customWalletSize) return customWalletSize;
+    if (walletSize === 'custom' && customWalletSize) return customWalletSize;
     
     switch (walletSize) {
       case '$50k+': return '50000';
@@ -72,7 +85,7 @@ export default function DashboardPage() {
   };
 
   const getPositionSizeValue = (positionSize: string): string => {
-    if (customPositionSize) return customPositionSize;
+    if (positionSize === 'custom' && customPositionSize) return customPositionSize;
     
     return positionSize.replace(/[^0-9.]/g, '');
   };
@@ -307,7 +320,7 @@ export default function DashboardPage() {
                     <button 
                       onClick={() => handlePageChange(currentPage - 1)}
                       disabled={currentPage === 1 || isLoading}
-                      className="px-2 md:px-4 py-1 md:py-2 disabled:opacity-50"
+                      className="px-2 md:px-4 py-1 md:py-2 disabled:opacity-50 cursor-pointer"
                     >
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -321,7 +334,7 @@ export default function DashboardPage() {
                     <button 
                       onClick={() => handlePageChange(currentPage + 1)}
                       disabled={currentPage === totalPages || isLoading || totalPages === 0}
-                      className="px-2 md:px-4 py-1 md:py-2 disabled:opacity-50"
+                      className="px-2 md:px-4 py-1 md:py-2 disabled:opacity-50 cursor-pointer"
                     >
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />

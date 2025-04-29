@@ -24,7 +24,6 @@ export default function TransactionCard({
   onAddAlert,
   onTrack
 }: TransactionCardProps) {
-  const walletForTrack = wallet;
   const [copySuccess, setCopySuccess] = useState(false);
   const router = useRouter();
 
@@ -32,7 +31,7 @@ export default function TransactionCard({
   const displayedToken = token.substring(0, 4) + "..." + token.substring(token.length - 4);
 
   const handleCopyToClipboard = () => {
-    navigator.clipboard.writeText(walletForTrack)
+    navigator.clipboard.writeText(wallet)
       .then(() => {
         setCopySuccess(true);
         setTimeout(() => setCopySuccess(false), 2000);
@@ -43,9 +42,8 @@ export default function TransactionCard({
   };
 
   const handleTrackWallet = () => {
-    onTrack(walletForTrack);
-    
-    router.push(`/wallet-tracker?address=${encodeURIComponent(walletForTrack)}`);
+    onTrack(wallet);
+    router.push(`/wallet-tracker?address=${encodeURIComponent(wallet)}`);
   };
 
   return (
@@ -79,14 +77,14 @@ export default function TransactionCard({
               )}
             </button>
           </span>
-          {" "}with {walletSize} {isBuy ? 'bought' : 'sold'} {amount} (${dollarValue}) of {displayedToken}
+          {" "}with {walletSize} wallet size {isBuy ? 'bought' : 'sold'} {amount} (${dollarValue}) of {displayedToken}
         </span>
       </div>
       
       <div className="flex space-x-4">
         <button 
           className={`px-4 py-1 rounded-sm text-xs cursor-pointer ${isAlerted ? 'bg-opacity-25 bg-yellow-600 text-yellow-500' : 'bg-gray-700 hover:bg-gray-600'}`}
-          onClick={() => onAddAlert(displayedWallet)}
+          onClick={() => onAddAlert(wallet)}
         >
           {isAlerted ? (
             <span className="text-xs">ADDED TO ALERTS</span>

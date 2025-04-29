@@ -230,7 +230,7 @@ export default function WalletTrackerPage() {
       <Navbar activePage="wallet-tracker" />
       
       <main className="flex-1 px-6 py-8 flex flex-col items-center">
-        <div className="w-full max-w-4xl">
+        <div className="w-full max-w-5xl">
           {/* Search bar */}
           <div className="mb-8 relative">
             <form onSubmit={handleSearch} className="relative">

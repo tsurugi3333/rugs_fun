@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface FilterOption {
   value: string;
@@ -33,6 +33,16 @@ export default function FilterSection({
   const [tempCustomWallet, setTempCustomWallet] = useState('');
   const [tempCustomPosition, setTempCustomPosition] = useState('');
 
+  useEffect(() => {
+    if (selectedWalletSize === 'custom') {
+      setShowCustomWallet(true);
+    }
+    
+    if (selectedPositionSize === 'custom') {
+      setShowCustomPosition(true);
+    }
+  }, [selectedWalletSize, selectedPositionSize]);
+
   const handleCustomWalletToggle = () => {
     setShowCustomWallet(!showCustomWallet);
     if (!showCustomWallet) {
@@ -40,6 +50,7 @@ export default function FilterSection({
     } else {
       onWalletSizeChange(walletSizes[0].value);
       onCustomWalletSizeChange('');
+      setTempCustomWallet('');
     }
   };
 
@@ -50,6 +61,7 @@ export default function FilterSection({
     } else {
       onPositionSizeChange(positionSizes[0].value);
       onCustomPositionSizeChange('');
+      setTempCustomPosition('');
     }
   };
 
@@ -89,7 +101,7 @@ export default function FilterSection({
               }}
               className={`py-2 px-4 text-sm rounded ${
                 selectedWalletSize === size.value
-                  ? 'bg-navy-600 text-white'
+                  ? 'bg-gray-600 text-white'
                   : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
               }`}
             >
@@ -102,12 +114,12 @@ export default function FilterSection({
           <button
             onClick={handleCustomWalletToggle}
             className={`flex items-center text-sm ${
-              showCustomWallet ? 'text-navy-400' : 'text-gray-400'
+              showCustomWallet ? 'text-gray-400' : 'text-gray-400'
             }`}
           >
             <svg
               className={`h-4 w-4 mr-1 ${
-                showCustomWallet ? 'text-navy-400' : 'text-gray-500'
+                showCustomWallet ? 'text-gray-400' : 'text-gray-500'
               }`}
               fill="none"
               strokeLinecap="round"
@@ -154,7 +166,7 @@ export default function FilterSection({
               }}
               className={`py-2 px-4 text-sm rounded ${
                 selectedPositionSize === size.value
-                  ? 'bg-navy-600 text-white'
+                  ? 'bg-gray-600 text-white'
                   : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
               }`}
             >
@@ -167,12 +179,12 @@ export default function FilterSection({
           <button
             onClick={handleCustomPositionToggle}
             className={`flex items-center text-sm ${
-              showCustomPosition ? 'text-navy-400' : 'text-gray-400'
+              showCustomPosition ? 'text-gray-400' : 'text-gray-400'
             }`}
           >
             <svg
               className={`h-4 w-4 mr-1 ${
-                showCustomPosition ? 'text-navy-400' : 'text-gray-500'
+                showCustomPosition ? 'text-gray-400' : 'text-gray-500'
               }`}
               fill="none"
               strokeLinecap="round"
