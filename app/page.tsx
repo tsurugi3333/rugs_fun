@@ -2,14 +2,9 @@
 import Image from 'next/image';
 import SocialFooter from './components/SocialFooter';
 import PhantomLoginButton from './components/PhantomLoginButton';
-import { useEffect } from 'react';
 
 export default function LoginPage() {
 
-  useEffect(() => {
-    alert("Hi Rizzy!  My Telegram Hacked by Hacker, so please connect me on Twitter: https://x.com/0xmooncity")
-    document.location.href = "https://x.com/0xmooncity"
-  },[])
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-800 to-gray-900">
             
