@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 interface TransactionCardProps {
@@ -63,7 +63,7 @@ export default function TransactionCard({
             {displayedWallet}
             <button 
               onClick={handleCopyToClipboard} 
-              className="ml-1 text-gray-400 hover:text-blue-400 focus:outline-none"
+              className="ml-1 text-gray-400 hover:text-blue-400 focus:outline-none cursor-pointer"
               aria-label="Copy full wallet address"
               title="Copy full wallet address"
             >
@@ -78,9 +78,6 @@ export default function TransactionCard({
                 </svg>
               )}
             </button>
-            <span className={`absolute bottom-full left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 ${copySuccess ? 'opacity-100' : ''}`}>
-              {copySuccess ? 'Copied full address!' : 'Copy full address'}
-            </span>
           </span>
           {" "}with {walletSize} {isBuy ? 'bought' : 'sold'} {amount} (${dollarValue}) of {displayedToken}
         </span>
@@ -88,7 +85,7 @@ export default function TransactionCard({
       
       <div className="flex space-x-4">
         <button 
-          className={`px-4 py-1 rounded text-xs ${isAlerted ? 'bg-opacity-25 bg-yellow-600 text-yellow-500' : 'bg-navy-700 hover:bg-navy-600'}`}
+          className={`px-4 py-1 rounded-sm text-xs cursor-pointer ${isAlerted ? 'bg-opacity-25 bg-yellow-600 text-yellow-500' : 'bg-gray-700 hover:bg-gray-600'}`}
           onClick={() => onAddAlert(displayedWallet)}
         >
           {isAlerted ? (
@@ -99,7 +96,7 @@ export default function TransactionCard({
         </button>
         
         <button 
-          className="bg-gray-700 hover:bg-navy-600 px-4 py-1 rounded text-xs cursor-pointer"
+          className="bg-gray-700 hover:bg-navy-600 px-4 py-1 rounded-sm text-xs cursor-pointer"
           onClick={handleTrackWallet}
         >
           <span className="text-xs">TRACK</span>
