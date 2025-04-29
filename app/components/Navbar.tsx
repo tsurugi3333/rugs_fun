@@ -2,25 +2,8 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
-import { useWallet } from '@solana/wallet-adapter-react';
 
 export default function Navbar({ activePage }: { activePage: 'login'|'dashboard' | 'wallet-tracker' | 'alerts' }) {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const router = useRouter();
-  const walletAddress = '3IY9M...MVQU'; // Replace with actual wallet address
-  const wallet = useWallet();
-  const handleCopy = () => {
-    navigator.clipboard.writeText('3IY9M6PVQUwG4x...'); // Full address here
-  };
-
-  const handleLogout = () => {
-    if(wallet.connected){
-      wallet.disconnect();
-    }
-    router.push('/');
-  };
 
   return (
     <nav className="flex justify-between items-center py-4 px-6 bg-navy-800 border-b border-gray-800 relative">
