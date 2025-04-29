@@ -99,9 +99,9 @@ export default function FilterSection({
                 onWalletSizeChange(size.value);
                 setShowCustomWallet(false);
               }}
-              className={`py-2 px-4 text-sm rounded ${
+              className={`py-2 px-4 text-sm rounded cursor-pointer ${
                 selectedWalletSize === size.value
-                  ? 'bg-black text-white'
+                  ? 'bg-gray-700 text-white'
                   : 'bg-gray-800 text-gray-300 hover:bg-black'
               }`}
             >
@@ -164,9 +164,9 @@ export default function FilterSection({
                 onPositionSizeChange(size.value);
                 setShowCustomPosition(false);
               }}
-              className={`py-2 px-4 text-sm rounded ${
+              className={`py-2 px-4 text-sm rounded cursor-pointer ${
                 selectedPositionSize === size.value
-                  ? 'bg-black text-white'
+                  ? 'bg-gray-700 text-white'
                   : 'bg-gray-800 text-gray-300 hover:bg-black'
               }`}
             >
@@ -221,7 +221,7 @@ export default function FilterSection({
       
       <button
         onClick={handleApply}
-        className="w-full bg-gray-600 hover:bg-gray-700 text-white py-2 rounded transition-colors cursor-pointer"
+        className="w-full bg-gray-600 hover:bg-black text-white py-2 rounded transition-colors cursor-pointer"
       >
         <span className="text-xl">APPLY FILTERS</span>
       </button>

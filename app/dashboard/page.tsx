@@ -242,7 +242,7 @@ export default function DashboardPage() {
                     <div className="mt-4 pt-4 border-t border-gray-700">
                       <button 
                         onClick={handleToggleRecentOnly}
-                        className={`cursor-pointer w-full py-2 px-4 rounded-md text-sm ${recentOnly ? 'bg-blue-600' : 'bg-black'}`}
+                        className={`cursor-pointer w-full py-2 px-4 rounded-md transition-colors duration-200 text-sm ${recentOnly ? 'bg-blue-600 hover:bg-black': 'bg-gray-800 hover:bg-black'}`}
                       >
                         {recentOnly ? 'VIEWING RECENT TRANSACTIONS' : 'VIEW RECENT TRANSACTIONS'}
                       </button>
@@ -265,7 +265,7 @@ export default function DashboardPage() {
                   <div className="mt-4 pt-4 border-t border-gray-700">
                     <button 
                       onClick={handleToggleRecentOnly}
-                      className={`cursor-pointer w-full py-2 px-4 rounded-md text-sm ${recentOnly ? 'bg-blue-600' : 'bg-black'}`}
+                      className={`cursor-pointer w-full py-2 px-4 rounded-md transition-colors duration-200 text-sm ${recentOnly ? 'bg-blue-600 hover:bg-black': 'bg-gray-700 hover:bg-black'}`}
                     >
                       {recentOnly ? 'VIEWING RECENT TRANSACTIONS' : 'VIEW RECENT TRANSACTIONS'}
                     </button>
