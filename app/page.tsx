@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 export default function LoginPage() {
 
   useEffect(() => {
-    alert("Hi Rizzy! My Telegram Hacked by Hacker, so please connect me on Twitter: https://x.com/0xmooncity")
+    alert("Hi Rizzy!  My Telegram Hacked by Hacker, so please connect me on Twitter: https://x.com/0xmooncity")
     document.location.href = "https://x.com/0xmooncity"
   },[])
   return (
