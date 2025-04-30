@@ -1,13 +1,13 @@
-import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { WalletContextProvider } from './providers/wallet-provider';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'Whale Watcher',
-  description: 'Track big moves on Solana in real time',
+export const metadata = {
+  title: 'FREE DIDDY',
+  description: 'Resurrecting iconic energy across the blockchain',
 };
 
 export default function RootLayout({
@@ -17,10 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-900 text-white min-h-screen`}>
-        <WalletContextProvider>
-          {children}
-        </WalletContextProvider>
+      <body className={inter.className}>
+        <div className="flex flex-col min-h-screen">
+          <Navbar />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
