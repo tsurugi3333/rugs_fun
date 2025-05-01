@@ -61,13 +61,13 @@ export default function Navbar() {
           
           <div className="flex items-center space-x-4">
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-              <img src="/images/x.png" alt="" />
+              <img src="/images/x-social-media-white-icon.svg" width={20} alt="" />
             </a>
             <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-              <img src="/images/navbar-telegram.png" alt="" />
+              <img src="/images/telegram-plane-svgrepo-com.svg" width={30} alt="" />
             </a>
             <a href="https://dexscreener.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-              <img src="/images/navbar-dexscreener.png" alt="" />
+              <img src="/images/dex-screener-seeklogo.png" width={30} alt="" />
             </a>
           </div>
 
