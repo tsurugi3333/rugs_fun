@@ -23,7 +23,7 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
     },
     {
       number: 2,
-      titleImage: "/images/Heading 3 → Buy XRP 2.png", // Replace with your actual image path
+      titleImage: "/images/Heading 3 → Buy XRP 2.png", /
       description: "Send tokens to preferred wallet (Phantom, Metamask, Paw)",
       buttonText: "SWAP",
       buttonShadow: "purple", // For step 2, purple shadow
@@ -31,7 +31,7 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
     },
     {
       number: 3,
-      titleImage: "/images/Heading 3 → Buy XRP 1.png", // Replace with your actual image path
+      titleImage: "/images/Heading 3 → Buy XRP 1.png", /
       description: "Swap Native coin for $Diddy on Phantom",
       buttonText: "SWAP",
       buttonShadow: "black", // For step 3, black shadow
