@@ -6,42 +6,70 @@ import Link from 'next/link';
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const scrollToSection = (sectionId: string) => {
+    setIsMenuOpen(false);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      // Add offset for the fixed navbar
+      const navbarHeight = 64; // 16 * 4 = 64px (h-16)
+      const offsetPosition = element.offsetTop - navbarHeight;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <nav className="bg-black/90 backdrop-blur-sm fixed w-full z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-white font-bold text-xl diddy-title">
-              <img src="/images/navbar-logo.png" alt="" />
+              <img src="/images/navbar-logo.png" alt="" className='cursor-pointer' />
             </Link>
           </div>
           
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/about" className="text-white hover:text-gray-300 transition-colors">
-              <img src="/images/about.png" alt="" />
-            </Link>
-            <Link href="/story" className="text-white hover:text-gray-300 transition-colors">
-              <img src="/images/story.png" alt="" />
-            </Link>
-            <Link href="/tokenomics" className="text-white hover:text-gray-300 transition-colors">
-              <img src="/images/tokenomics.png" alt="" />
-            </Link>
-            <Link href="/how-to-buy" className="text-white hover:text-gray-300 transition-colors">
-              <img src="/images/how-to-buy.png" alt="" />
-            </Link>
+            <button 
+              onClick={() => scrollToSection('about')} 
+              className="text-white hover:text-gray-300 transition-colors"
+            >
+              <img src="/images/about.png" alt="" className='cursor-pointer'/>
+            </button>
+            <button 
+              onClick={() => scrollToSection('story')} 
+              className="text-white hover:text-gray-300 transition-colors"
+            >
+              <img src="/images/story.png" alt="" className='cursor-pointer'/>
+            </button>
+            <button 
+              onClick={() => scrollToSection('tokenomics')} 
+              className="text-white hover:text-gray-300 transition-colors"
+            >
+              <img src="/images/tokenomics.png" alt="" className='cursor-pointer'/>
+            </button>
+            <button 
+              onClick={() => scrollToSection('how-to-buy')} 
+              className="text-white hover:text-gray-300 transition-colors"
+            >
+              <img src="/images/how-to-buy.png" alt="" className='cursor-pointer'/>
+            </button>
           </div>
-            <div className="flex items-center space-x-4">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+          
+          <div className="flex items-center space-x-4">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
               <img src="/images/x.png" alt="" />
-              </a>
-              <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-                <img src="/images/navbar-telegram.png" alt="" />
-              </a>
-              <a href="https://dexscreener.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-                <img src="/images/navbar-dexscreener.png" alt="" />
-              </a>
-            </div>
+            </a>
+            <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+              <img src="/images/navbar-telegram.png" alt="" />
+            </a>
+            <a href="https://dexscreener.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+              <img src="/images/navbar-dexscreener.png" alt="" />
+            </a>
+          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -62,6 +90,38 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+
+      {/* Mobile menu */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-black/95 py-2">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <button 
+              onClick={() => scrollToSection('about')} 
+              className="block text-white px-3 py-2 w-full text-left hover:bg-gray-800"
+            >
+              About
+            </button>
+            <button 
+              onClick={() => scrollToSection('story')} 
+              className="block text-white px-3 py-2 w-full text-left hover:bg-gray-800"
+            >
+              Story
+            </button>
+            <button 
+              onClick={() => scrollToSection('tokenomics')} 
+              className="block text-white px-3 py-2 w-full text-left hover:bg-gray-800"
+            >
+              Tokenomics
+            </button>
+            <button 
+              onClick={() => scrollToSection('how-to-buy')} 
+              className="block text-white px-3 py-2 w-full text-left hover:bg-gray-800"
+            >
+              How to Buy
+            </button>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

@@ -1,17 +1,22 @@
-import Link from 'next/link';
+'use client'
 
 export default function Hero() {
-  return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Dark overlay for readability */}
-      <div className="absolute inset-0 z-10"></div>
+  
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const navbarHeight = 64; 
+      const offsetPosition = element.offsetTop - navbarHeight;
       
-      {/* Background image */}
-      <div className="absolute inset-0 z-0">
-        <div className="w-full h-full relative">
-          <div className="absolute inset-0 z-0 hero-bg"></div>
-        </div>
-      </div>
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  return (
+    <div className="relative min-h-screen hero-bg mt-16 flex items-center justify-center overflow-hidden">
 
       <div className="container mx-auto px-4 z-20 text-center md:text-right">
         <div className="max-w-3xl ml-auto flex flex-col items-center">
@@ -24,9 +29,13 @@ export default function Hero() {
           <p className="text-lg md:text-xl mb-8 text-white/80">
            <img src="/images/across the blockchain.png" alt="" />
           </p>
-          <Link href="/how-to-buy" className="diddy-button text-center max-w-40">
-            <img src="/images/join the movement.png" alt="" />
-          </Link>
+          <button 
+              onClick={() => scrollToSection('how-to-buy')} 
+              className="bg-white rounded-lg px-3 py-2 border-2 border-black text-white hover:text-gray-300 transition-colors cursor-pointer"
+              style={{boxShadow: '3px 3px 2px rgba(100, 100, 100, 3)'}}
+            >
+              <img src="/images/join the movement.png" alt="" />
+          </button>
         </div>
       </div>
 

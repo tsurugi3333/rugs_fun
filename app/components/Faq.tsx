@@ -20,35 +20,39 @@ const FAQPage = () => {
   const faqData: FAQItem[] = [
     {
       question: 'Is this an official Diddy product?',
-      answer: 'No, Diddy Memes is not officially affiliated with Sean "Diddy" Combs. It is a community-created cryptocurrency meme token inspired by the artist.'
+      answer: 'Yes, this is the only Official Diddy Meme, by Scan "Diddy" Combs'
     },
     {
       question: 'What is the official contract address and symbol for the Diddy Meme?',
-      answer: 'The official contract address for Diddy Meme is 0x1234567890abcdef1234567890abcdef12345678 (always verify this on our official channels). The token symbol is $DIDDY.'
+      answer: 'CA:6p6mgHyF7AeE6TZkSmFsko444wqoP15kUScj21jGIFN               Symbol: $Diddy',
     },
     {
       question: 'How can I get Diddy Memes?',
-      answer: 'You can acquire Diddy Memes through decentralized exchanges like Uniswap, SushiSwap, or PancakeSwap depending on the blockchain network. Always ensure you are using the correct contract address and take security precautions.'
+      answer: 'Moonshot is the easiest way. Users sign up with an emal address, can deposit with Apple Pay, debit card, credit card, Venmo, Solana/USDC, and receive your $DIDDY within minutes.'
     },
     {
       question: 'What is a meme?',
-      answer: 'A meme is a concept, behavior, or idea that spreads from person to person within a culture. In cryptocurrency, meme coins are tokens created as a joke or for fun, often inspired by internet memes, celebrities, or popular culture references.'
+      answer: 'Merriam-Websiter-s meme noun: 1: an idea, behavior, style, or usage that spreads from person to person within a culture'
     },
     {
       question: 'Why do I need to perform KYC/AML when I buy on Moonshot?',
-      answer: 'KYC (Know Your Customer) and AML (Anti-Money Laundering) procedures are regulatory requirements on certain platforms like Moonshot to prevent fraud, identity theft, and illegal activities. These measures help ensure compliance with financial regulations.'
+      answer: 'Moonshot uses services like "MoonPay" that allow the customer to purchase Diddy Memes with major USD payment methods or other digital assets, subject transactions checks, AML/CFT and anti-fraud controls. Once a customer "Buy Order" has been properliy authorized, the purchasers will receive their Diddy Memes in the wallet address nominated by the customer.'
     },
     {
       question: 'Which blockchain network are the Diddy Memes minted?',
       answer: 'Diddy Memes are currently minted on the Ethereum blockchain as ERC-20 tokens. This allows for wide compatibility with popular wallets and decentralized exchanges.'
     },
     {
-      question: 'What are the Diddy Memes?',
-      answer: 'Diddy Memes are cryptocurrency tokens that combine internet meme culture with the persona of music mogul Sean "Diddy" Combs. They are designed for community engagement and as a fun way to participate in the crypto space.'
+      question: 'Which blockchain network are the Diddy Memes minted?',
+      answer: 'Solana'
     },
     {
+        question: 'What are the Diddy Memes',
+        answer: 'Diddy Memes are fungible crypto assets created and tracked on the Solana blockchain.'
+      },
+    {
       question: 'What else should I know?',
-      answer: 'Always do your own research (DYOR) before investing in any cryptocurrency, including meme tokens. Meme coins can be highly volatile. Never invest more than you can afford to lose, secure your wallet properly, and be aware of potential scams or impersonators.'
+      answer: 'Please find important disclosures about the Diddy Meme[Here]'
     }
   ];
 
@@ -66,9 +70,9 @@ const FAQPage = () => {
               className="flex justify-between items-center w-full text-left py-4 focus:outline-none"
               onClick={() => toggleQuestion(index)}
             >
-              <span className="text-xl font-medium text-gray-900">{faq.question}</span>
+              <span className="text-xl font-bold text-gray-900">{faq.question}</span>
               <Plus 
-                className={`h-5 w-5 text-gray-500 transition-transform duration-200 ${
+                className={`h-5 w-5 text-black transition-transform duration-200 cursor-pointer ${
                   openIndex === index ? 'transform rotate-45' : ''
                 }`}
               />
@@ -76,7 +80,7 @@ const FAQPage = () => {
             
             {openIndex === index && (
               <div className="mt-2 pr-12">
-                <p className="text-gray-600">{faq.answer}</p>
+                <p className="text-gray-900">{faq.answer}</p>
               </div>
             )}
           </div>

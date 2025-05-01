@@ -69,9 +69,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .adImage-bg {
   background-image: url('/images/Section1.png');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -79,21 +80,18 @@ body {
 .comic-bg-1{
   background-image: url('/images/comic1.jpg.png');
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
 }
 
 .comic-bg-2{
   background-image: url('/images/comic2.jpg.png');
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
 }
 
 .comic-bg-3{
   background-image: url('/images/comic3.jpg.png');
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -120,5 +118,5 @@ body {
 
 .gradient-text {
   @apply bg-clip-text text-transparent;
-  background-image: linear-gradient(90deg, #6b1d5d 0%, #0e0e74 100%);
+  background-image: linear-gradient(90deg, #5c2151 0%, #070744 100%);
 }
