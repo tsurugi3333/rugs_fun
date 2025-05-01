@@ -73,7 +73,7 @@ export default function TokenDistribution({ className = '' }: TokenDistributionP
     const angleInRadians = (midAngle - 90) * (Math.PI / 180);
     
     // Coordinates for the outer point of the segment
-    const outerX = 150 + 100 * Math.cos(angleInRadians);
+    const outerX = 180 + 100 * Math.cos(angleInRadians);
     const outerY = 150 + 100 * Math.sin(angleInRadians);
     
     // Coordinates for the tooltip box
