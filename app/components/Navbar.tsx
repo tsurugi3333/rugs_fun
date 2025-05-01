@@ -37,25 +37,25 @@ export default function Navbar() {
               onClick={() => scrollToSection('about')} 
               className="text-white hover:text-gray-300 transition-colors"
             >
-              <img src="/images/about.png" alt="" className='cursor-pointer'/>
+              <h2 className='font-extrabold italic text-2xl'>ABOUT</h2>
             </button>
             <button 
               onClick={() => scrollToSection('story')} 
               className="text-white hover:text-gray-300 transition-colors"
             >
-              <img src="/images/story.png" alt="" className='cursor-pointer'/>
+              <h2 className='font-extrabold italic text-2xl'>STORY</h2>
             </button>
             <button 
               onClick={() => scrollToSection('tokenomics')} 
               className="text-white hover:text-gray-300 transition-colors"
             >
-              <img src="/images/tokenomics.png" alt="" className='cursor-pointer'/>
+              <h2 className='font-extrabold italic text-2xl'>TOKENOMICS</h2>
             </button>
             <button 
               onClick={() => scrollToSection('how-to-buy')} 
               className="text-white hover:text-gray-300 transition-colors"
             >
-              <img src="/images/how-to-buy.png" alt="" className='cursor-pointer'/>
+              <h2 className='font-extrabold italic text-2xl'>BUY NOW</h2>
             </button>
           </div>
           
@@ -67,7 +67,7 @@ export default function Navbar() {
               <img src="/images/telegram-plane-svgrepo-com.svg" width={30} alt="" />
             </a>
             <a href="https://dexscreener.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-              <img src="/images/dex-screener-seeklogo.png" width={30} alt="" />
+              <img src="/images/dex-screener-seeklogo.svg" width={20} alt="" />
             </a>
           </div>
 

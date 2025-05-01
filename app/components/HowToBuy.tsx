@@ -1,50 +1,16 @@
 'use client';
 
-import React, { useState } from 'react';
-
 interface HowToBuyProps {
   fullPage?: boolean;
 }
 
 export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
-  const [activeStep, setActiveStep] = useState(0);
-  const totalSteps = 3;
-
-  const goToStep = (step: number) => {
-    setActiveStep(step);
-  };
-
-  const steps = [
-    {
-      number: 1,
-      titleImage: "/images/Heading 3 → Buy XRP.png", // Replace with your actual image path
-      description: "Buy SOL using your preferred exchange or DEX",
-      image: "/images/OG_17- web 1.png"
-    },
-    {
-      number: 2,
-      titleImage: "/images/Heading 3 → Buy XRP 2.png", /
-      description: "Send tokens to preferred wallet (Phantom, Metamask, Paw)",
-      buttonText: "SWAP",
-      buttonShadow: "purple", // For step 2, purple shadow
-      image: "/images/OG_17- web 1.png"
-    },
-    {
-      number: 3,
-      titleImage: "/images/Heading 3 → Buy XRP 1.png", /
-      description: "Swap Native coin for $Diddy on Phantom",
-      buttonText: "SWAP",
-      buttonShadow: "black", // For step 3, black shadow
-      image: "/images/OG_17- web 1.png"
-    }
-  ];
-
   return (
     <section id="how-to-buy" className={`py-16 bg-white text-black relative border-b-2 ${fullPage ? 'pt-24' : ''}`}>
       <div className="container flex flex-col mx-auto text-center items-center justify-center px-4">
-        <img src="/images/Heading 2 → HOW TO BUY.png" alt=""/>
+        <img src="/images/Heading 2 → HOW TO BUY (1).png" alt=""/>
         <p className="text-center mb-6 max-w-2xl mx-auto font-bold mt-5">
-          Follow the simple steps below to buy $Diddy,<br/> and join Diddy movement!
+          Buy with credit card or crypto
         </p>
         
         {/* Person with sign - Positioned absolutely */}
@@ -52,83 +18,24 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
           <img src="/images/ad.png" alt="Free Diddy" className="w-48 h-auto" />
         </div>
         
-        <div className="max-w-xl mx-auto relative">
+        <div className="w-full mx-auto relative">
           
-          {/* Steps indicator */}
-          <div className="flex justify-center mb-4">
-            <div className="flex space-x-4">
-              {Array.from({ length: totalSteps }).map((_, index) => (
-                <button 
-                  key={index}
-                  onClick={() => goToStep(index)}
-                  className={`w-4 h-4 border-1 rounded-full ${activeStep === index ? 'bg-indigo-400' : 'bg-gray-300'} transition-colors`}
-                  aria-label={`Go to step ${index + 1}`}
-                  style={{boxShadow: '2px 2px 2px rgba(0,0,0,3)'}}
-                />
-              ))}
-            </div>
+        <div className="w-full flex flex-col md:flex-row justify-around gap-6 px-4 sm:px-6 md:px-8 lg:px-12 mb-8 md:mb-20">
+          <div className="w-full md:w-1/2 border-2 border-black rounded-lg shadow-md mx-auto md:mx-0 mb-6 md:mb-0 max-w-lg px-3 py-6" style={{boxShadow: '3px 4px 3px rgba(0, 0, 0, 5)'}}>
+            <img 
+              src="/images/Heading 3 → Buy XRP (4).png" 
+              className="w-full h-auto py-4 px-4 sm:py-6 sm:px-6 lg:py-8 lg:px-8" 
+              alt="XRP Information" 
+            />
           </div>
-          
-          {/* Step Content - Only show active step */}
-          <div className="w-full">
-            {steps.map((step, index) => (
-              <div 
-                key={index} 
-                className={`w-full transition-opacity duration-300 ${activeStep === index ? 'block opacity-100' : 'hidden opacity-0'}`}
-              >
-                <div 
-                  className="mb-4 border-2 rounded-md mx-auto relative"
-                  style={{ 
-                    boxShadow: '3px 3px 4px rgba(0, 0, 0, 8)',
-                  }}
-                >
-                  <div className="absolute -top-3 left-4 ">
-                    <h3 className="text-base text-white font-bold bg-black italic inline-block px-2 py-0.5">
-                      STEP {step.number}
-                    </h3>
-                  </div>
-                  <div className="flex flex-col md:flex-row items-center p-4 pt-6">
-                    <div className="md:mb-0 w-full md:w-2/3">
-                      {/* Title image instead of text */}
-                      <div className="flex justify-center md:justify-start mb-2">
-                        <img 
-                          src={step.titleImage} 
-                          alt={`Step ${step.number}`} 
-                          className="h-8 object-contain px-3"
-                        />
-                      </div>
-                      <p className="text-sm mb-3">{step.description}</p>
-                      {step.buttonText && (
-                        <button 
-                          className="bg-black text-white px-3 py-1 text-sm rounded font-bold hover:bg-gray-800 transition-colors"
-                          style={{ 
-                            boxShadow: step.buttonShadow === 'purple' 
-                              ? '2px 2px 5px rgba(128, 0, 128, 0.8)' 
-                              : step.buttonShadow === 'black'
-                                ? '2px 2px 5px rgba(0, 0, 0, 0.8)'
-                                : 'none'
-                          }}
-                        >
-                          {step.buttonText}
-                        </button>
-                      )}
-                    </div>
-                    <div className="w-full md:w-1/3 flex justify-center">
-                      <div className="rounded-full flex items-center justify-center">
-                        <img 
-                          src={step.image} 
-                          width={200} 
-                          height={90} 
-                          alt={`Step ${step.number} illustration`} 
-                          className="object-contain"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <div className="w-full md:w-1/2 border-2 border-black rounded-lg shadow-md mx-auto md:mx-0 max-w-lg px-3 py-6" style={{boxShadow: '3px 4px 3px rgba(0, 0, 0, 5)'}}>
+            <img 
+              src="/images/Heading 3 → Buy XRP (6).png" 
+              className="w-full h-auto py-4 px-4 sm:py-6 sm:px-6 lg:py-8 lg:px-8" 
+              alt="XRP Information" 
+            />
           </div>
+        </div>
 
           {/* Mobile only ad image */}
           <div className="mt-10 flex justify-center md:hidden">

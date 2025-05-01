@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Plus } from 'lucide-react';
 import { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'FAQ | Diddy Memes',
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 
 interface FAQItem {
   question: string;
-  answer: string;
+  answer: React.ReactNode; // Changed from string to ReactNode to support JSX elements
 }
 
 const FAQPage = () => {
@@ -49,10 +50,20 @@ const FAQPage = () => {
     {
         question: 'What are the Diddy Memes',
         answer: 'Diddy Memes are fungible crypto assets created and tracked on the Solana blockchain.'
-      },
+    },
     {
       question: 'What else should I know?',
-      answer: 'Please find important disclosures about the Diddy Meme[Here]'
+      answer: (
+        <>
+          Please find important disclosures about the Diddy Meme{' '}
+          <Link 
+            href="/terms-and-policy" 
+            className="text-blue-600 hover:text-blue-800 hover:underline font-medium"
+          >
+            [Here]
+          </Link>
+        </>
+      )
     }
   ];
 
