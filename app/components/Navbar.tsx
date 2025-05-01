@@ -2,8 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import { FaTwitter, FaTelegram } from 'react-icons/fa';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,31 +12,34 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-white font-bold text-xl diddy-title">
-              FREE DIDDY
+              <img src="/images/navbar-logo.png" alt="" />
             </Link>
           </div>
           
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/about" className="text-white hover:text-gray-300 transition-colors">
-              ABOUT
+              <img src="/images/about.png" alt="" />
             </Link>
             <Link href="/story" className="text-white hover:text-gray-300 transition-colors">
-              STORY
+              <img src="/images/story.png" alt="" />
             </Link>
             <Link href="/tokenomics" className="text-white hover:text-gray-300 transition-colors">
-              TOKENOMICS
+              <img src="/images/tokenomics.png" alt="" />
             </Link>
             <Link href="/how-to-buy" className="text-white hover:text-gray-300 transition-colors">
-              HOW TO BUY
+              <img src="/images/how-to-buy.png" alt="" />
             </Link>
           </div>
-          <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4">
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-                <FaTwitter size={20} />
+              <img src="/images/x.png" alt="" />
               </a>
               <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-                <FaTelegram size={20} />
+                <img src="/images/navbar-telegram.png" alt="" />
+              </a>
+              <a href="https://dexscreener.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+                <img src="/images/navbar-dexscreener.png" alt="" />
               </a>
             </div>
 
@@ -61,51 +62,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      
-      {/* Mobile menu */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-black/95">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link 
-              href="/about"
-              className="text-white block px-3 py-2 rounded-md text-base font-medium"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              ABOUT
-            </Link>
-            <Link 
-              href="/story"
-              className="text-white block px-3 py-2 rounded-md text-base font-medium"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              STORY
-            </Link>
-            <Link 
-              href="/tokenomics"
-              className="text-white block px-3 py-2 rounded-md text-base font-medium"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              TOKENOMICS
-            </Link>
-            <Link 
-              href="/how-to-buy"
-              className="text-white block px-3 py-2 rounded-md text-base font-medium"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              HOW TO BUY
-            </Link>
-            
-            <div className="flex space-x-4 px-3 py-2">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white">
-                <FaTwitter size={20} />
-              </a>
-              <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" className="text-white">
-                <FaTelegram size={20} />
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
     </nav>
   );
 }

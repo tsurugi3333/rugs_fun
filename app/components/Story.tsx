@@ -6,9 +6,9 @@ interface StoryProps {
 
 export default function Story({ fullPage = false }: StoryProps) {
   return (
-    <section id="story" className={`py-16 bg-white border-b-7 text-black ${fullPage ? 'pt-24' : ''}`}>
-      <div className="container mx-auto px-4 ">
-        <h2 className="text-4xl font-bold mb-12 text-center diddy-title">$DIDDY'S STORY</h2>
+    <section id="story" className={`py-16 bg-white border-b-3 text-black ${fullPage ? 'pt-24' : ''}`}>
+      <div className="container flex flex-col text-center itmes-center justify-center mx-auto px-4 ">
+        <img src="/images/Paragraph+Background+Border+Shadow.png" alt="" width={300}/>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto border border-3">
           <div className="bg-white rounded-xl p-6">

@@ -1,23 +1,14 @@
-import Hero from './components/Hero';
-import About from './components/About';
-import Story from './components/Story';
-import Tokenomics from './components/Tokenomics';
-import HowToBuy from './components/HowToBuy';
-import Community from './components/Community';
-import FAQPage from './faq/page';
-import AdImage from './components/AdImage';
+'use client';
 
-export default function Home() {
-  return (
-    <>
-      <Hero />
-      <About />
-      <Story />
-      <Tokenomics />
-      <Community />
-      <HowToBuy />
-      <AdImage />
-      <FAQPage />
-    </>
-  );
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+
+export default function LandingPage() {
+  const router = useRouter();
+  
+  useEffect(() => {
+    router.push('/login');
+  }, [router]);
+  
+  return null;
 }

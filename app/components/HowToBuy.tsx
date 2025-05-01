@@ -48,8 +48,8 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
 
   return (
     <section id="how-to-buy" className={`py-16 bg-white text-black relative border-b-3 ${fullPage ? 'pt-24' : ''}`}>
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-2 text-center" style={{ textShadow: '2px 2px 0 rgba(0,0,0,0.1)' }}>HOW TO BUY</h2>
+      <div className="container flex flex-col mx-auto text-center items-center justify-center px-4">
+        <img src="/images/Heading 2 → HOW TO BUY.png" alt=""/>
         <p className="text-center mb-6 max-w-2xl mx-auto font-medium">
           Follow the simple steps below to buy $Diddy,<br/> and join Diddy movement!
         </p>
@@ -132,14 +132,14 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
         
          {/* Available On Section - Always visible */}
          <div 
-            className="max-w-3xl items-center text-center mx-auto border border-black rounded-md relative"
+            className="max-w-4xl items-center text-center mt-5 mx-auto border border-black rounded-md relative"
             style={{ 
               boxShadow: '3px 3px 0 rgba(0,0,0,0.8)',
             }}
           >
             <div className="absolute -top-3 right-4">
-              <div className="text-xs text-white bg-black px-2 py-0.5 font-bold inline-block">
-                AVAILABLE ON
+              <div className="text-xs text-white bg-black px-3 py-0.5 font-bold inline-block">
+                <img src="/images/AVAILABLE ON.png" width={100} alt="Free Diddy"/>
               </div>
             </div>
             <div className="flex justify-between items-center p-3 pt-5">
