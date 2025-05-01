@@ -12,8 +12,8 @@ export default function About({ fullPage = false }: AboutProps) {
         
         <div className="max-w-4xl mx-auto">
           <p className="text-xl mb-6 text-center font-bold">
-            $DIDDY isn't just a meme coin—it's a decentralized rally cry.<br />
-            For culture. For freedom. For anyone who ever danced to "Mo Money Mo Problems."<br />
+            $DIDDY isn&apos;t just a meme coin—it&apos;s a decentralized rally cry.<br />
+            For culture. For freedom. For anyone who ever danced to &quot;Mo Money Mo Problems.&quot;<br />
             This is the moment we ride. For the mogul. For the memes.
           </p>
           
@@ -31,7 +31,7 @@ export default function About({ fullPage = false }: AboutProps) {
                 {/* Text Content */}
                 <div className="w-full md:w-1/2">
                   <img src="/images/Heading 3 → STICKSY'S NOTE BOARD.png" alt=""/>
-                  <p className="mb-4 mt-4 text-lg font-bold">Let's save the trenches, join our community now</p>
+                  <p className="mb-4 mt-4 text-lg font-bold">Let&apos;s save the trenches, join our community now</p>
                   <a 
                       href="https://telegram.org" 
                       target="_blank" 

@@ -17,7 +17,7 @@ export default function Story({ fullPage = false }: StoryProps) {
                 <p className="text-xs w-[80%] mt-40 ml-4 border-2 rounded-sm bg-white justify-center">
                 A SYMBOL OF HUSTLE, AMBITION, AND
                 BLACK EXCELLENCE.
-                HE DIDN'T FOLLOW CULTURE, HE WAS THE CULTURE.
+                HE DIDN&apos;T FOLLOW CULTURE, HE WAS THE CULTURE.
                 </p>
             </div>
             
@@ -37,7 +37,7 @@ export default function Story({ fullPage = false }: StoryProps) {
             <h3 className="text-lg font-semibold mb-4 border border-3">THEN CAME THE SILENCE. THE HEADLINES. THE DISTANCE.</h3>
             <div className="aspect-square comic-bg-3 rounded-lg mb-4 overflow-hidden relative">
             <p className="text-xs w-[80%] mt-40 ml-4 border-2 rounded-sm bg-white justify-center">
-                BUT LEGENDS DON'T FADE—THEY WAIT.
+                BUT LEGENDS DON&apos;T FADE—THEY WAIT.
                 AND WHEN THE PEOPLE REMEMBER?
                 THEY COME BACK LOUDER.
                 </p>

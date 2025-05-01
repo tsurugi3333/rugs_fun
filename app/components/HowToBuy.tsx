@@ -1,7 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useState } from 'react';
 
 interface HowToBuyProps {
   fullPage?: boolean;
@@ -10,14 +9,6 @@ interface HowToBuyProps {
 export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
   const [activeStep, setActiveStep] = useState(0);
   const totalSteps = 3;
-
-  const nextStep = () => {
-    setActiveStep((prev) => (prev === totalSteps - 1 ? 0 : prev + 1));
-  };
-
-  const prevStep = () => {
-    setActiveStep((prev) => (prev === 0 ? totalSteps - 1 : prev - 1));
-  };
 
   const goToStep = (step: number) => {
     setActiveStep(step);

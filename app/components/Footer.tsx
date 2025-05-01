@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { FaTwitter, FaTelegram } from 'react-icons/fa';
 
 export default function Footer() {
   return (
