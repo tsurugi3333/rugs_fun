@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
@@ -11,14 +11,12 @@ const LoginPage = () => {
   
   const correctPassword = 'freediddy123';  
   
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
     if (password === correctPassword) {
-      // Password is correct, redirect to home page
       router.push('/home');
     } else {
-      // Password is incorrect, show error
       setError('Incorrect password. Please try again.');
       setPassword('');
     }
