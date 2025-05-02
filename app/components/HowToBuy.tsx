@@ -25,12 +25,12 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
         {/* Character images container with responsive positioning */}
         <div className="w-full relative">
           {/* Left character - responsive positioning */}
-          <div className="hidden md:block absolute left-0 md: mt-92 lg:mt-82 xl:mt-66 z-10 w-1/6 min-w-24 max-w-100">
+          <div className="hidden md:block absolute left-0 mt-120 md: mt-130 lg:mt-115 xl:mt-74 z-0 w-1/6 min-w-24 max-w-100">
             <img src="/images/ad.png" alt="Free Diddy" className="w-full h-auto" />
           </div>
           
           {/* Right character - responsive positioning */}
-          <div className="hidden md:block absolute right-0 md: mt-94 lg:mt-85 xl:mt-71 z-10 w-1/5 min-w-32 max-w-120">
+          <div className="hidden md:block absolute right-0 mt-120 md: mt-136 lg:mt-120 xl:mt-79 z-0 w-1/5 min-w-32 max-w-120">
             <img src="/images/noteplacing.png.png" alt="Diddy" className="w-full h-auto" />
           </div>
           
@@ -78,10 +78,11 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
         </div>
 
         
-        <div className="w-full bg-white py-3">
-          <p className="text-xs sm:text-sm text-center mx-auto max-w-6xl px-4 leading-relaxed text-gray-900">
+        <div className="w-full py-3 z-10">
+          <p className="text-xs sm:text-sm text-center mx-auto max-w-6xl px-4 leading-relaxed text-gray-600">
             <span className="font-semibold">$DIDDY</span> is designed as a form of expression and engagement with the ideals and beliefs represented by the symbol &quot;$DIDDY&quot; and its associated artwork. It is not intended to serve as, or be perceived as, an investment opportunity, investment contract, or any form of security.
           </p>
+          <p className="text-xs sm:text-sm text-center mx-auto max-w-6xl px-4 leading-relaxed text-gray-600"><span className="font-semibold">$DIDDY</span> memes are akin to collectibles and you understand in purchasing them that they are solely for entertainment, social interaction and cultural purposes.</p>
         </div>
       </div>
     </section>

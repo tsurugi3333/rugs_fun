@@ -21,7 +21,7 @@ const FAQPage = () => {
   const faqData: FAQItem[] = [
     {
       question: 'Is this an official Diddy product?',
-      answer: 'Yes, this is the only Official Diddy Meme, by Scan "Diddy" Combs'
+      answer: 'Yes, this is the only official Diddy meme, for Sean "Diddy" Combs.'
     },
     {
       question: 'What is the official contract address and symbol for the Diddy Meme?',
@@ -44,7 +44,7 @@ const FAQPage = () => {
     },
     {
       question: 'Which blockchain network are the Diddy Memes minted?',
-      answer: 'Diddy Memes are currently minted on the Ethereum blockchain as ERC-20 tokens. This allows for wide compatibility with popular wallets and decentralized exchanges.'
+      answer: 'Diddy Memes are currently minted on the Solana blockchain as SPL tokens. This allows for wide compatibility with popular wallets and decentralized exchanges.'
     },
     {
       question: 'Which blockchain network are the Diddy Memes minted?',
