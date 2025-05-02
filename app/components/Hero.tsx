@@ -19,7 +19,7 @@ export default function Hero() {
             <img src="/images/Heading 2 → ABOUT STICKSY.png" alt="" />
           </h1>
           <p className="text-xl md:text-2xl mb-4 text-white font-semibold">
-            <img src="/images/TOKEN ADDRESS.png" alt="" />
+            <img src="/images/TOKEN ADDRESS.png" alt="token address" />
           </p>
           <div className="w-3/4 bg-white rounded-lg px-4 py-2 border border-black border-3"
                 style={{boxShadow: '3px 3px 4px rgba(0, 0, 0, 4)'}}>
