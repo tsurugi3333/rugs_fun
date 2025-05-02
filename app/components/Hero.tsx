@@ -1,16 +1,10 @@
 'use client'
-import { useState } from 'react';
 
 export default function Hero() {
-  const [copied, setCopied] = useState(false);
   const tokenAddress = "HQ123456789abcdef123456789abcdef123456789"; // Replace with your actual token address
   
   const copyToClipboard = () => {
     navigator.clipboard.writeText(tokenAddress)
-      .then(() => {
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
-      })
       .catch(err => {
         console.error('Failed to copy: ', err);
       });
@@ -40,20 +34,20 @@ export default function Hero() {
           <p className="text-xl md:text-2xl mb-2 text-white font-semibold">
             <img src="/images/TOKEN ADDRESS.png" alt="" />
           </p>
-          <div className="w-full bg-white rounded-l-lg px-4 py-6 border border-black border-3"
+          <div className="w-full bg-white rounded-l-lg px-4 py-2 border border-black border-3"
                 style={{boxShadow: '3px 3px 4px rgba(0, 0, 0, 4)'}}>
             <div className="flex items-center w-full">
               <input
                 type="text"
                 value={tokenAddress}
                 readOnly
-                className="w-full bg-white rounded-l-lg px-4 text-gray-600 "
+                className="w-full bg-white rounded-sm border-1 border-white px-4 text-gray-600"
               />
               <button
                 onClick={copyToClipboard}
-                className="bg-black text-white rounded-lg  font-bold hover:bg-gray-800 transition-colors"
+                className="bg-black text-white rounded-sm px-4 py-3 font-bold hover:bg-gray-800 transition-colors cursor-pointer"
               >
-                {copied ? "COPIED!" : "COPY ADDRESS"}
+                <img src="/images/COPY ADDRESS.png" alt="" />
               </button>
             </div>
           </div>
