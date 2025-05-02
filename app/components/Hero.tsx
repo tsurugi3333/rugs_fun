@@ -1,6 +1,20 @@
 'use client'
+import { useState } from 'react';
 
 export default function Hero() {
+  const [copied, setCopied] = useState(false);
+  const tokenAddress = "HQ123456789abcdef123456789abcdef123456789"; // Replace with your actual token address
+  
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(tokenAddress)
+      .then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      })
+      .catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+  };
   
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -24,11 +38,25 @@ export default function Hero() {
             <img src="/images/Heading 2 → ABOUT STICKSY.png" alt="" />
           </h1>
           <p className="text-xl md:text-2xl mb-2 text-white font-semibold">
-            <img src="/images/Resurrecting Iconic energy.png" alt="" />
+            <img src="/images/TOKEN ADDRESS.png" alt="" />
           </p>
-          <p className="text-lg md:text-xl mb-8 text-white/80">
-           <img src="/images/across the blockchain.png" alt="" />
-          </p>
+          <div className="w-full bg-white rounded-l-lg px-4 py-6 border border-black border-3"
+                style={{boxShadow: '3px 3px 4px rgba(0, 0, 0, 4)'}}>
+            <div className="flex items-center w-full">
+              <input
+                type="text"
+                value={tokenAddress}
+                readOnly
+                className="w-full bg-white rounded-l-lg px-4 text-gray-600 "
+              />
+              <button
+                onClick={copyToClipboard}
+                className="bg-black text-white rounded-lg  font-bold hover:bg-gray-800 transition-colors"
+              >
+                {copied ? "COPIED!" : "COPY ADDRESS"}
+              </button>
+            </div>
+          </div>
           <button 
               onClick={() => scrollToSection('how-to-buy')} 
               className="bg-white rounded-lg px-3 py-2 border-2 border-black text-white hover:text-gray-300 transition-colors cursor-pointer"

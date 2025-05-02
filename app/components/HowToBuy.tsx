@@ -41,10 +41,6 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
             </div>
           </div>
           
-          {/* Mobile only ad image */}
-          <div className="mt-10 flex justify-center md:hidden">
-            <img src="/images/ad.png" alt="Free Diddy" className="max-w-full h-auto" />
-          </div>
         </div>
         
         {/* Available On Section - Always visible */}
