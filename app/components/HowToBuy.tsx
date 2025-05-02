@@ -1,5 +1,14 @@
 'use client';
 
+import { Bangers } from 'next/font/google';
+
+const bangers = Bangers({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+});
+
+
 interface HowToBuyProps {
   fullPage?: boolean;
 }
@@ -30,13 +39,17 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
               {/* Left card - with margin to prevent overlap with character */}
               <div className="w-full md:w-1/2 border-2 border-black rounded-lg shadow-md mx-auto md:mx-0 mb-6 md:mb-0 max-w-lg px-3 py-6 md:ml-16 lg:ml-24" 
                   style={{boxShadow: '3px 4px 3px rgba(0, 0, 0, 5)'}}>
-                <img src="/images/Heading 3 → Buy XRP (4).png" className="w-full h-auto py-4 px-4 sm:py-6 sm:px-6 lg:py-8 lg:px-8" alt="XRP Information" />
+                <h2 className={`${bangers.className} text-[48px] leading-[48px] tracking-[1.2px] text-gray-800 uppercase items-center py-10`}>
+                  Buy with crypto
+                </h2>
               </div>
               
               {/* Right card - with margin to prevent overlap with character */}
               <div className="w-full md:w-1/2 border-2 border-black rounded-lg shadow-md mx-auto md:mx-0 max-w-lg px-3 py-6 md:mr-16 lg:mr-24" 
                   style={{boxShadow: '3px 4px 3px rgba(0, 0, 0, 5)'}}>
-                <img src="/images/Heading 3 → Buy XRP (6).png" className="w-full h-auto py-4 px-4 sm:py-6 sm:px-6 lg:py-8 lg:px-8" alt="XRP Information" />
+                <h2 className={`${bangers.className} text-[48px] leading-[48px] tracking-[1.2px] text-gray-800 uppercase items-center py-10`}>
+                  Buy with Debit Card
+                </h2>
               </div>
             </div>
           </div>

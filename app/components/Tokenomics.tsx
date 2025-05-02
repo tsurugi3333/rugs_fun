@@ -58,7 +58,7 @@ const DonutChart: React.FC<{
   
   return (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
-      <circle cx={center} cy={center} r={innerRadius * 0.9} fill="#1E1E1E" />
+      <circle cx={center} cy={center} r={innerRadius * 0.7} fill="#1E1E1E" />
       {segments}
     </svg>
   );
@@ -141,13 +141,13 @@ const TokenDistributionDashboard: React.FC = () => {
     <div className="w-full mt-44 md:mt-44 lg:mt-44">
       <div className="max-w-7xl flex flex-col lg:flex-row gap-4 lg:gap-6 text-center items-center mx-auto">
         {/* Project Summary Card */}
-        <div className="w-full lg:w-5/12 bg-gray-800 rounded-lg overflow-hidden text-left relative">
+        <div className="w-full lg:w-5/12 bg-[#2B2B2B] rounded-lg overflow-hidden px-5 text-left relative">
           
-          <div className="p-4 border-b border-gray-700">
+          <div className="p-4 border-b border-gray-500">
             <h2 className="text-white text-lg font-bold">Project Summary</h2>
           </div>
           
-          <div className="divide-y divide-gray-700">
+          <div className="divide-y divide-gray-500">
             <div className="p-4">
               <p className="text-gray-400 text-sm">Ticker</p>
               <p className="text-white text-2xl font-bold">{tokenData.ticker}</p>
@@ -176,19 +176,19 @@ const TokenDistributionDashboard: React.FC = () => {
         </div>
         
         {/* Distribution Chart Card */}
-        <div className="w-full lg:w-7/12 bg-gray-800 rounded-lg overflow-hidden">
-          <div className="p-4 border-b border-gray-700">
+        <div className="w-full lg:w-7/12 bg-[#2B2B2B] rounded-lg overflow-hidden">
+          <div className="p-4 border-b border-gray-500">
             <h2 className="text-white text-lg font-bold">{tokenData.ticker} Distribution by Group</h2>
           </div>
           
           <div className="flex flex-col md:flex-row">
             {/* Chart */}
-            <div className="md:w-7/12 p-4 flex justify-center items-center border-r-2 border-gray-700">
+            <div className="md:w-7/12 p-4 flex justify-center items-center border-r-2 border-gray-500">
               <DonutChart data={chartData} size={280} />
             </div>
             
             {/* Distribution Details */}
-            <div className="md:w-5/12 divide-y divide-gray-700">
+            <div className="md:w-5/12 divide-y divide-gray-500">
               {tokenData.distributionGroups.map((group, index) => (
                 <div key={index} className="p-4">
                   <p className="text-gray-400 text-sm">{group.name}</p>

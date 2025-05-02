@@ -1,7 +1,7 @@
 'use client'
 
 export default function Hero() {
-  const tokenAddress = "HQ123456789abcdef123456789abcdef123456789"; // Replace with your actual token address
+  const tokenAddress = "Coming soon"; // Replace with your actual token address
   
   const copyToClipboard = () => {
     navigator.clipboard.writeText(tokenAddress)
@@ -10,19 +10,6 @@ export default function Hero() {
       });
   };
   
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const navbarHeight = 64; 
-      const offsetPosition = element.offsetTop - navbarHeight;
-      
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  };
-
   return (
     <div className="relative min-h-screen hero-bg mt-16 flex items-center justify-center overflow-hidden">
 
@@ -31,10 +18,10 @@ export default function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold mb-4 diddy-title text-white">
             <img src="/images/Heading 2 → ABOUT STICKSY.png" alt="" />
           </h1>
-          <p className="text-xl md:text-2xl mb-2 text-white font-semibold">
+          <p className="text-xl md:text-2xl mb-4 text-white font-semibold">
             <img src="/images/TOKEN ADDRESS.png" alt="" />
           </p>
-          <div className="w-full bg-white rounded-l-lg px-4 py-2 border border-black border-3"
+          <div className="w-3/4 bg-white rounded-lg px-4 py-2 border border-black border-3"
                 style={{boxShadow: '3px 3px 4px rgba(0, 0, 0, 4)'}}>
             <div className="flex items-center w-full">
               <input
@@ -51,13 +38,6 @@ export default function Hero() {
               </button>
             </div>
           </div>
-          <button 
-              onClick={() => scrollToSection('how-to-buy')} 
-              className="bg-white rounded-lg px-3 py-2 border-2 border-black text-white hover:text-gray-300 transition-colors cursor-pointer"
-              style={{boxShadow: '3px 3px 2px rgba(100, 100, 100, 3)'}}
-            >
-              <img src="/images/join the movement.png" alt="" />
-          </button>
         </div>
       </div>
 
