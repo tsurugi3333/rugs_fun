@@ -25,7 +25,10 @@ const FAQPage = () => {
     },
     {
       question: 'What is the official contract address and symbol for the Diddy Meme?',
-      answer: 'CA:6p6mgHyF7AeE6TZkSmFsko444wqoP15kUScj21jGIFN               Symbol: $Diddy',
+      answer: (<>
+        <span className='w-full break-words overflow-hidden text-ellipsis'>CA:6p6mgHyF7AeE6TZkSmFsko444wqoP15kUScj21jGIFN</span>
+        <span>Symbol:$Diddy</span>
+      </>),
     },
     {
       question: 'How can I get Diddy Memes?',

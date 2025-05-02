@@ -7,36 +7,40 @@ interface HowToBuyProps {
 export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
   return (
     <section id="how-to-buy" className={`py-16 bg-white text-black relative border-b-2 ${fullPage ? 'pt-24' : ''}`}>
-      <div className="container flex flex-col mx-auto text-center items-center justify-center px-4">
-        <img src="/images/Heading 2 → HOW TO BUY (1).png" alt=""/>
-        <p className="text-center mb-6 max-w-2xl mx-auto font-bold mt-5">
-          Buy with credit card or crypto
+      <div className="container flex flex-col mx-auto text-center items-center justify-center px-4 relative"> 
+        <img src="/images/Heading 2 → HOW TO BUY (1).png" alt=""/> 
+        <p className="text-center mb-6 max-w-2xl mx-auto font-bold mt-5"> 
+          Buy with credit card or crypto 
         </p>
         
-        {/* Person with sign - Positioned absolutely */}
-        <div className="absolute left-60 bottom-0 z-10 hidden md:block">
-          <img src="/images/ad.png" alt="Free Diddy" className="w-48 h-auto" />
-        </div>
-        
-        <div className="w-full mx-auto relative">
+        {/* Character images container with responsive positioning */}
+        <div className="w-full relative">
+          {/* Left character - responsive positioning */}
+          <div className="hidden md:block absolute left-0 md: mt-92 lg:mt-82 xl:mt-66 z-10 w-1/6 min-w-24 max-w-100">
+            <img src="/images/ad.png" alt="Free Diddy" className="w-full h-auto" />
+          </div>
           
-        <div className="w-full flex flex-col md:flex-row justify-around gap-6 px-4 sm:px-6 md:px-8 lg:px-12 mb-8 md:mb-20">
-          <div className="w-full md:w-1/2 border-2 border-black rounded-lg shadow-md mx-auto md:mx-0 mb-6 md:mb-0 max-w-lg px-3 py-6" style={{boxShadow: '3px 4px 3px rgba(0, 0, 0, 5)'}}>
-            <img 
-              src="/images/Heading 3 → Buy XRP (4).png" 
-              className="w-full h-auto py-4 px-4 sm:py-6 sm:px-6 lg:py-8 lg:px-8" 
-              alt="XRP Information" 
-            />
+          {/* Right character - responsive positioning */}
+          <div className="hidden md:block absolute right-0 md: mt-94 lg:mt-85 xl:mt-71 z-10 w-1/5 min-w-32 max-w-120">
+            <img src="/images/noteplacing.png.png" alt="Diddy" className="w-full h-auto" />
           </div>
-          <div className="w-full md:w-1/2 border-2 border-black rounded-lg shadow-md mx-auto md:mx-0 max-w-lg px-3 py-6" style={{boxShadow: '3px 4px 3px rgba(0, 0, 0, 5)'}}>
-            <img 
-              src="/images/Heading 3 → Buy XRP (6).png" 
-              className="w-full h-auto py-4 px-4 sm:py-6 sm:px-6 lg:py-8 lg:px-8" 
-              alt="XRP Information" 
-            />
+          
+          <div className="w-full mx-auto">
+            <div className="w-full flex flex-col md:flex-row justify-around gap-6 px-4 sm:px-6 md:px-8 lg:px-12 mb-8 md:mb-20">
+              {/* Left card - with margin to prevent overlap with character */}
+              <div className="w-full md:w-1/2 border-2 border-black rounded-lg shadow-md mx-auto md:mx-0 mb-6 md:mb-0 max-w-lg px-3 py-6 md:ml-16 lg:ml-24" 
+                  style={{boxShadow: '3px 4px 3px rgba(0, 0, 0, 5)'}}>
+                <img src="/images/Heading 3 → Buy XRP (4).png" className="w-full h-auto py-4 px-4 sm:py-6 sm:px-6 lg:py-8 lg:px-8" alt="XRP Information" />
+              </div>
+              
+              {/* Right card - with margin to prevent overlap with character */}
+              <div className="w-full md:w-1/2 border-2 border-black rounded-lg shadow-md mx-auto md:mx-0 max-w-lg px-3 py-6 md:mr-16 lg:mr-24" 
+                  style={{boxShadow: '3px 4px 3px rgba(0, 0, 0, 5)'}}>
+                <img src="/images/Heading 3 → Buy XRP (6).png" className="w-full h-auto py-4 px-4 sm:py-6 sm:px-6 lg:py-8 lg:px-8" alt="XRP Information" />
+              </div>
+            </div>
           </div>
-        </div>
-
+          
           {/* Mobile only ad image */}
           <div className="mt-10 flex justify-center md:hidden">
             <img src="/images/ad.png" alt="Free Diddy" className="max-w-full h-auto" />
@@ -44,29 +48,31 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
         </div>
         
         {/* Available On Section - Always visible */}
-        <div 
-          className="w-full max-w-3xl items-center text-center mt-3 sm:mt-5 mx-auto border-2 sm:border-3 border-black rounded-md relative"
-          style={{ 
-            boxShadow: '5px 5px 4px rgba(0,0,0,0.8)',
-          }}
-        >
-          <div className="absolute -top-3 right-4">
-            <div className="text-xs text-white bg-black px-3 py-0.5 font-bold inline-block">
-              <img src="/images/AVAILABLE ON.png" width={140} alt="Available On"/>
-            </div>
+        <div className="w-full max-w-3xl items-center text-center mx-auto rounded-md relative">
+          <div className="flex justify-center items-center text-lg font-bold text-center mx-auto">
+            Buy easily with 
+            <span>
+              <img src="/images/MOONSHOT 1.png" alt="Moonshot" width={160} height={30} className="object-contain mx-4" />
+            </span>
           </div>
-          <div className="flex justify-between items-center p-6 pt-5">
-            <span className="text-xl md:text-2xl font-bold">Phantom</span>
-            <img src="/images/MOONSHOT 1.png" alt="Moonshot" width={160} height={30} className="object-contain" />
-            <div className="flex items-center space-x-2">
-              <div className="flex items-center">
-                <img src="/images/dexscreener.png" alt="DEX Screener" width={30} height={30} />
-                <div>
-                  <div><span className="font-bold">DEX</span>SCREENER</div>
-                </div>
-              </div>
-            </div>
+        </div>
+        
+        <div className="w-full max-w-4xl items-center text-center mt-3 sm:mt-5 mx-auto rounded-md relative">
+          <div className="flex flex-wrap justify-center gap-4 p-6 pt-5">
+            <img src="/images/1706195363venmo-logo-transparent.png" alt="Venmo" className="h-8 object-contain" />
+            <img src="/images/apple-pay-card5428.png" alt="Apple Pay" className="h-8 object-contain" />
+            <img src="/images/MasterCard_Logo.svg.png" alt="MasterCard" className="h-8 object-contain" />
+            <img src="/images/Visa_Logo.png" alt="Visa" className="h-8 object-contain" />
+            <img src="/images/usdc-logo-on-transparent-background-free-vector 1.png" alt="USDC" className="h-8 object-contain" />
+            <img src="/images/solana_sol_logo_28f7fb0af5 1.png" alt="Solana" className="h-8 object-contain" />
           </div>
+        </div>
+
+        
+        <div className="w-full bg-white py-3">
+          <p className="text-xs sm:text-sm text-center mx-auto max-w-6xl px-4 leading-relaxed text-gray-900">
+            <span className="font-semibold">$DIDDY</span> is designed as a form of expression and engagement with the ideals and beliefs represented by the symbol &quot;$DIDDY&quot; and its associated artwork. It is not intended to serve as, or be perceived as, an investment opportunity, investment contract, or any form of security.
+          </p>
         </div>
       </div>
     </section>

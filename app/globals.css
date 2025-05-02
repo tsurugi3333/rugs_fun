@@ -70,6 +70,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.bg-adimage {
+  background-image: url('/images/Section1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .adImage-bg {
   background-image: url('/images/Section1.png');
   background-size: cover;
