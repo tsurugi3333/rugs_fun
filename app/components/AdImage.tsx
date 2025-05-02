@@ -27,11 +27,13 @@ export default function AdImage() {
                 style={{boxShadow: '4px 4px 4px rgba(0, 0, 0, 0.4)'}}
               >
                 <button className="bg-black rounded-lg py-2 px-4 sm:py-3 sm:px-6 hover:bg-gray-800 transition-colors">
-                  <img 
-                    src="/images/Join X (1).png" 
-                    alt="Join X" 
-                    className="h-5 sm:h-6 md:h-8 w-auto"
-                  />
+                  <a href="https://x.com">
+                    <img 
+                      src="/images/Join X (1).png" 
+                      alt="Join X" 
+                      className="h-5 sm:h-6 md:h-8 w-auto"
+                    />
+                  </a>
                 </button>
               </div>
             </div>

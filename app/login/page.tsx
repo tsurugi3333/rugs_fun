@@ -28,8 +28,8 @@ const LoginPage = () => {
       <nav className="bg-black w-full z-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center h-12">
-            <Link href="/" className="text-white font-bold text-4xl italic tracking-wider">
-              <img src="/images/FREE DIDDY - logo.png" alt="Logo" />
+            <Link href="/" className="text-white font-bold text-xl diddy-title">
+              <img src="/images/$Diddy.png" alt=""/>
             </Link>
           </div>
         </div>
@@ -74,7 +74,7 @@ const LoginPage = () => {
             </button>
             
             <div className="text-center text-sm text-gray-600 mt-4">
-              <p>#FreeDiddy</p>
+              <p>$FreeDiddy$</p>
             </div>
           </form>
         </div>

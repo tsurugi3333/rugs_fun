@@ -27,7 +27,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-white font-bold text-xl diddy-title">
-              <img src="/images/navbar-logo.png" alt="" className='cursor-pointer' />
+              <img src="/images/$Diddy.png" alt=""/>
             </Link>
           </div>
           
