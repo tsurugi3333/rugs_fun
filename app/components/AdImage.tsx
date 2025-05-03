@@ -18,7 +18,7 @@ export default function AdImage() {
           />
           
           <div className="absolute inset-0">
-            <div className="absolute left-4 sm:left-8 md:left-10 top-8 sm:top-12 md:top-20 w-2/3 sm:w-3/5 md:w-1/2 lg:w-2/5">
+            <div className="absolute left-4 sm:left-8 md:left-10 top-8 sm:top-12 md:top-20 w-2/3 sm:w-3/5 md:w-1/2 lg:w-2/5 hidden md:block">
               <img 
                 src="/images/communi.png" 
                 alt="Community" 
