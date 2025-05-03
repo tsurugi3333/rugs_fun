@@ -17,10 +17,10 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
   return (
     <section id="how-to-buy" className={`py-16 bg-white text-black relative border-b-2 ${fullPage ? 'pt-24' : ''}`}>
       <div className="container flex flex-col mx-auto text-center items-center justify-center px-4"> 
-        <img src="/images/Heading 2 → HOW TO BUY (1).png" alt=""/> 
+        {/* <img src="/images/Heading 2 → HOW TO BUY (1).png" alt=""/> 
         <p className="text-center mb-6 max-w-2xl mx-auto font-bold mt-5"> 
           Buy with credit card or crypto 
-        </p>
+        </p> */}
         
         {/* Character images container with responsive positioning */}
         <div className="w-full">
@@ -34,9 +34,9 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
             <img src="/images/noteplacing.png.png" alt="Diddy" className="w-full h-auto" />
           </div>
           
-          <div className="w-full mx-auto">
+          {/* <div className="w-full mx-auto">
             <div className="w-full flex flex-col md:flex-row justify-around gap-6 px-4 sm:px-6 md:px-8 lg:px-12 mb-8 md:mb-20">
-              {/* Left card - with margin to prevent overlap with character */}
+
               <div className="w-full md:w-1/2 border-2 border-black rounded-lg shadow-md mx-auto md:mx-0 mb-6 md:mb-0 max-w-lg px-3 py-6 md:ml-16 lg:ml-24" 
                   style={{boxShadow: '3px 4px 3px rgba(0, 0, 0, 5)'}}>
                 <h2 className={`${bangers.className} text-[48px] leading-[48px] tracking-[1.2px] text-gray-800 uppercase items-center py-10`}>
@@ -44,7 +44,6 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
                 </h2>
               </div>
               
-              {/* Right card - with margin to prevent overlap with character */}
               <div className="w-full md:w-1/2 border-2 border-black rounded-lg shadow-md mx-auto md:mx-0 max-w-lg px-3 py-6 md:mr-16 lg:mr-24" 
                   style={{boxShadow: '3px 4px 3px rgba(0, 0, 0, 5)'}}>
                 <h2 className={`${bangers.className} text-[48px] leading-[48px] tracking-[1.2px] text-gray-800 uppercase items-center py-10`}>
@@ -52,7 +51,7 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
                 </h2>
               </div>
             </div>
-          </div>
+          </div> */}
           
         </div>
         
@@ -79,10 +78,10 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
 
         
         <div className="w-[65%] py-3 z-0">
-          <p className="text-xs sm:text-xs text-center mx-auto max-w-6xl px-4 leading-relaxed text-gray-600">
-            <span className="font-semibold">$DIDDY</span> is designed as a form of expression and engagement with the ideals and beliefs represented by the symbol &quot;$DIDDY&quot; and its associated artwork. It is not intended to serve as, or be perceived as, an investment opportunity, investment contract, or any form of security.
+          <p className="text-md sm:text-md text-center mx-auto max-w-6xl px-4 leading-relaxed text-gray-600">
+            <span className="font-bold">$DIDDY</span> is designed as a form of expression and engagement with the ideals and beliefs represented by the symbol &quot;$DIDDY&quot; and its associated artwork. It is not intended to serve as, or be perceived as, an investment opportunity, investment contract, or any form of security.
           </p>
-          <p className="text-xs sm:text-xs text-center mx-auto max-w-6xl px-4 leading-relaxed text-gray-600"><span className="font-semibold">$DIDDY</span> memes are akin to collectibles and you understand in purchasing them that they are solely for entertainment, social interaction and cultural purposes.</p>
+          <p className="text-md sm:text-md text-center mx-auto max-w-6xl px-4 leading-relaxed text-gray-600"><span className="font-bold">$DIDDY</span> memes are akin to collectibles and you understand in purchasing them that they are solely for entertainment, social interaction and cultural purposes.</p>
         </div>
       </div>
     </section>
