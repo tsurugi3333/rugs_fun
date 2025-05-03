@@ -48,6 +48,12 @@ export default function Footer() {
                 >
                   Community
                 </button>
+                <Link 
+                href="/terms-and-policy" 
+                className="text-white  hover:text-gray-300 text-sm text-left cursor-pointer"
+              >
+                Terms and Conditions
+              </Link>
             </div>
             <div>
               <div className="flex flex-col space-x-4">
@@ -62,12 +68,7 @@ export default function Footer() {
                     </a>
                 </div>
               </div>
-              <Link 
-                href="/terms-and-policy" 
-                className="text-gray-800  hover:text-gray-500 text-sm mt-1"
-              >
-                Terms and Conditions
-              </Link>
+              
               </div>
             </div>
           </div>

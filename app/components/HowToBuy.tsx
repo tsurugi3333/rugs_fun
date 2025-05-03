@@ -57,7 +57,7 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
         </div>
         
         {/* Available On Section - Always visible */}
-        <div className="w-full max-w-3xl items-center text-center mx-auto rounded-md relative">
+        {/* <div className="w-full max-w-3xl items-center text-center mx-auto rounded-md relative">
           <div className="flex justify-center items-center text-lg font-bold text-center mx-auto">
             Buy easily with 
             <span>
@@ -75,7 +75,7 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
             <img src="/images/usdc-logo-on-transparent-background-free-vector 1.png" alt="USDC" className="h-8 object-contain" />
             <img src="/images/solana_sol_logo_28f7fb0af5 1.png" alt="Solana" className="h-8 object-contain" />
           </div>
-        </div>
+        </div> */}
 
         
         <div className="w-[65%] py-3 z-0">
