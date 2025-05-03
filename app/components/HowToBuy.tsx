@@ -1,12 +1,12 @@
 'use client';
 
-import { Bangers } from 'next/font/google';
+// import { Bangers } from 'next/font/google';
 
-const bangers = Bangers({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-});
+// const bangers = Bangers({
+//   weight: '400',
+//   subsets: ['latin'],
+//   display: 'swap',
+// });
 
 
 interface HowToBuyProps {
