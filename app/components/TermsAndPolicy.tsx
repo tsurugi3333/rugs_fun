@@ -25,7 +25,7 @@ const TermsAndPolicyPage = () => {
           The website located at www.GetTrumpMemes.com (the &quot;Website&quot;) is the intellectual property of
           Fight Fight Fight LLC (hereinafter collectively referred to as &quot;we&quot; &quot;our&quot; or &quot;us&quot;). The following Terms
           and Conditions also incorporate by reference our{' '}
-          <Link href="/privacy-policy" className="text-blue-600 hover:underline">
+          <Link href="" className="text-blue-600 hover:underline">
             Privacy Policy
           </Link>
           , and any and all other applicable

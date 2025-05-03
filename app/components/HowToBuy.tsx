@@ -16,21 +16,21 @@ interface HowToBuyProps {
 export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
   return (
     <section id="how-to-buy" className={`py-16 bg-white text-black relative border-b-2 ${fullPage ? 'pt-24' : ''}`}>
-      <div className="container flex flex-col mx-auto text-center items-center justify-center px-4 relative"> 
+      <div className="container flex flex-col mx-auto text-center items-center justify-center px-4"> 
         <img src="/images/Heading 2 → HOW TO BUY (1).png" alt=""/> 
         <p className="text-center mb-6 max-w-2xl mx-auto font-bold mt-5"> 
           Buy with credit card or crypto 
         </p>
         
         {/* Character images container with responsive positioning */}
-        <div className="w-full relative">
+        <div className="w-full">
           {/* Left character - responsive positioning */}
-          <div className="hidden md:block absolute left-0 mt-120 md: mt-130 lg:mt-115 xl:mt-74 z-0 w-1/6 min-w-24 max-w-100">
+          <div className="hidden md:block absolute left-10 bottom-0 z-1 w-1/6 min-w-24 max-w-100">
             <img src="/images/ad.png" alt="Free Diddy" className="w-full h-auto" />
           </div>
           
           {/* Right character - responsive positioning */}
-          <div className="hidden md:block absolute right-0 mt-120 md: mt-136 lg:mt-120 xl:mt-79 z-0 w-1/5 min-w-32 max-w-120">
+          <div className="hidden md:block absolute right-10 bottom-0 z-1 w-1/5 min-w-32 max-w-120">
             <img src="/images/noteplacing.png.png" alt="Diddy" className="w-full h-auto" />
           </div>
           
@@ -78,11 +78,11 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
         </div>
 
         
-        <div className="w-full py-3 z-10">
-          <p className="text-xs sm:text-sm text-center mx-auto max-w-6xl px-4 leading-relaxed text-gray-600">
+        <div className="w-[65%] py-3 z-0">
+          <p className="text-xs sm:text-xs text-center mx-auto max-w-6xl px-4 leading-relaxed text-gray-600">
             <span className="font-semibold">$DIDDY</span> is designed as a form of expression and engagement with the ideals and beliefs represented by the symbol &quot;$DIDDY&quot; and its associated artwork. It is not intended to serve as, or be perceived as, an investment opportunity, investment contract, or any form of security.
           </p>
-          <p className="text-xs sm:text-sm text-center mx-auto max-w-6xl px-4 leading-relaxed text-gray-600"><span className="font-semibold">$DIDDY</span> memes are akin to collectibles and you understand in purchasing them that they are solely for entertainment, social interaction and cultural purposes.</p>
+          <p className="text-xs sm:text-xs text-center mx-auto max-w-6xl px-4 leading-relaxed text-gray-600"><span className="font-semibold">$DIDDY</span> memes are akin to collectibles and you understand in purchasing them that they are solely for entertainment, social interaction and cultural purposes.</p>
         </div>
       </div>
     </section>
