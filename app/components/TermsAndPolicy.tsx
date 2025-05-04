@@ -14,183 +14,592 @@ const TermsAndPolicyPage = () => {
     <div className="max-w-4xl mx-auto px-4 py-16 bg-white text-black">
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-5xl font-bold mb-4">Terms and Conditions</h1>
-        <p className="text-md font-bold mb-2">DIDDY MEME COIN</p>
-        <p className="text-md text-black">Last Modified: April 23, 2025</p>
+        <h1 className="text-4xl font-bold mb-4">Diddy Memes <br/>Terms and Conditions</h1>
       </div>
 
       {/* Terms Content */}
       <div className="space-y-6 text-gray-800">
         <p>
-          The website located at www.GetTrumpMemes.com (the &quot;Website&quot;) is the intellectual property of
-          Fight Fight Fight LLC (hereinafter collectively referred to as &quot;we&quot; &quot;our&quot; or &quot;us&quot;). The following Terms
-          and Conditions also incorporate by reference our{' '}
-          <Link href="" className="text-blue-600 hover:underline">
-            Privacy Policy
-          </Link>
-          , and any and all other applicable
-          operating rules, policies, schedules and other terms and conditions or documents that may be
-          published from time to time (collectively, the &quot;Terms and Conditions&quot; or this &quot;Agreement&quot;). Our
-          Website, together with any content, functionality, and services offered on or through our Website,
-          and all of the existing and any updated or new content, features, functionalities, materials, social
-          media pages, shall be collectively referred to as the &quot;Services.&quot;
+          Thank you for visiting <Link href="/dashboard" className='text-blue-700 underline'>www.pdiddymemes.com</Link> (the &quot;Website&quot;). Please carefully review the
+          terms below as they contain important information about the Website and the digital collectible tokens known as as &quot;Diddy Memes&quot; or &quot;Diddy&quot; featured on the Website(the &quot;Diddy Memes&quot;).
+        </p>
+        <h3 className='text-left font-bold text-lg'>Introduction</h3>
+        <p>
+          The Website is owned and operated by Combs Brothers Productions LLC (hereinafter collectively referred to with its affiliate(s), successor(s), assign(s) and/or designee(s) as &quot;Meme Group&quot; &quot;we&quot; &quot;our&quot; or &quot;us&quot;). Combs Brothers Productions LLC is owned exclusively by relatives of Sean Combs, a/k/a &quot;Diddy&quot;, including certain of his children. Our Website, together with any content, functionality, and services offered on or through our Website, and all of the existing and any updated or new content, features, functionalities, materials, social media pages, shall be collectively referred to as the &quot;Services.&quot;
+        </p>
+        <p>
+          THIS AGREEMENT CONTAINS DISCLAIMERS OF WARRANTIES, LIMITATIONS OF
+          LIABILITY, RELEASES, A CLASS-ACTION WAIVER, AND A REQUIREMENT TO
+          ARBITRATE ANY AND ALL CLAIMS THAT MAY ARISE HEREUNDER AGAINST
+          COMBS BROTHERS PRODUCTIONS LLC, AND ITS COMMERCIAL PARTNERS AND
+          LICENSORS, AND EACH OF THEIR RESPECTIVE PAST, PRESENT AND FUTURE
+          EMPLOYEES, OFFICERS, DIRECTORS, CONTRACTORS, CONSULTANTS, EQUITY
+          HOLDERS, SUPPLIERS, VENDORS, SERVICE PROVIDERS, PARENT COMPANIES,
+          SUBSIDIARIES, AFFILIATES, AGENTS, REPRESENTATIVES, PREDECESSORS,
+          SUCCESSORS AND ASSIGNS (INDIVIDUALLY AND COLLECTIVELY, &quot;COVERED
+          PARTIES&quot;), WHO ARE EXPRESS THIRD-PARTY BENEFICIARIES OF THE
+          MANDATORY ARBITRATION PROVISION. 
         </p>
 
         <p>
-          These Terms and Conditions explain the terms and conditions by which you may access and use the
-          Services provided by us. Please review these Terms and Conditions carefully before accessing the
-          Website or any of the Services. The Terms and Conditions supersede all prior or contemporaneous
-          agreements, representations, warranties and/or understandings with respect to your use of the
-          Services. If you do not agree to the Terms and Conditions in its entirety, you should not use the
+          You agree to the Terms and Conditions in their entirety when you: (a) access or use the Website; (b) access and/or view any of the: (i) links to third-party resources and other information (&quot;Third-Party Links&quot;) through the Website; and/or (ii) videos, audio, stories, testimonials, text, photographs, graphics, artwork, information and/or other content that may be featured on the Website (the &quot;Website Content,&quot; and together with the Third-Party Links, the &quot;Content&quot;); and/ or (d) purchase any of the Diddy Memes featured on the Website (the &quot;Diddy Memes&quot;); and/or (e) indicate your acceptance of these Terms and Conditions.
+        </p>
+
+        <p>
+          These Terms and Conditions supersede all prior or contemporaneous agreements,
+          representations, warranties and/or understandings with respect to your use of the Services. If you
+          do not understand or agree to the Terms and Conditions in its entirety, you should not use the
           Website or any of the Services in any manner or form whatsoever.
         </p>
-
-        <p className="text-black uppercase">
-          THIS AGREEMENT CONTAINS DISCLAIMERS OF WARRANTIES, LIMITATIONS OF LIABILITY,
-          RELEASES, CLASS-ACTION WAIVER, AND THE REQUIREMENT TO ARBITRATE ANY AND ALL CLAIMS
-          THAT MAY ARISE HEREUNDER AGAINST FIGHT FIGHT FIGHT LLC, ITS AFFILIATES, MANAGERS,
-          MEMBERS, SERVICE PROVIDERS, PARTNERS, ADVISORS, AND VENDORS (COLLECTIVELY,
-          &quot;COVERED PARTIES&quot;), WHO ARE THE EXPRESS THIRD-PARTY BENEFICIARIES OF THE MANDATORY
-          ARBITRATION PROVISION. THE AFOREMENTIONED PROVISIONS ARE AN ESSENTIAL BASIS OF THIS
-          AGREEMENT.
-        </p>
-
-        <p>You agree to the Terms and Conditions in its entirety when you: (a) access or use the Website; (b) access and/or view any of the: (i) links to third-party resources and other information (&quot;Third-Party Links&quot;) through the Website; and/or (ii) videos, audio, stories, testimonials, text, photographs, graphics, artwork, information and/or other content that may be featured on the Website (the &quot;Website Content,&quot; and together with the Third-Party Links, the &quot;Content&quot;); (d) purchase any of the Solana blockchain-based fungible cryptocurrency tokens known as &quot;Trump Cards&quot; or &quot;TRUMP&quot; featured on the Website (the &quot;Trump Memes&quot;); and/or (e) utilize the various registration forms, contact forms and/or contact information made available on the Website.</p>
-
-        <p>THE TRUMP MEMES ARE INTENDED TO FUNCTION AS AN EXPRESSION OF SUPPORT FOR, AND ENGAGEMENT WITH, THE IDEALS AND BELIEFS EMBODIED BY THE SYMBOL &quot;TRUMP&quot; AND THE ASSOCIATED ARTWORK (THE &quot;ARTWORK&quot;) AND ARE NOT INTENDED TO BE, OR TO BE THE SUBJECT OF, AN INVESTMENT OPPORTUNITY, INVESTMENT CONTRACT, OR SECURITY OF ANY TYPE. NO FEDERAL OR STATE AGENCY OR ANY OTHER GOVERNMENTAL AUTHORITY HAS PASSED ON OR MADE ANY RECOMMENDATION OR ENDORSEMENT OF THE TRUMP MEMES OR THE FAIRNESS OR SUITABILITY OF THE PURCHASE OF THE TRUMP MEMES, NOR HAS ANY GOVERNMENTAL AUTHORITY PASSED ON OR ENDORSED THE MERITS OF THE SERVICES.</p>
-
-        <p>NEITHER THE TRUMP MEMES NOR THE SERVICES ARE POLITICAL AND HAVE NOTHING TO DO WITH ANY POLITICAL CAMPAIGN, GOVERNMENT AGENCY OR GOVERNMENTAL OFFICE IN THE UNITED STATES OF AMERICA OR ELSEWHERE. THE TRUMP MEMES ARE NOT INTENDED TO BE DISTRIBUTED TO ANY PERSON OR ENTITY IN ANY JURISDICTION WHERE SUCH TRANSACTIONS ARE RESTRICTED OR PROHIBITED UNDER APPLICABLE LAWS. IT IS YOUR RESPONSIBILITY TO ENSURE COMPLIANCE WITH THE LAWS OF YOUR JURISDICTION IN CONNECTION WITH YOUR PURCHASE, TRADE OR SALE OF THE TRUMP MEMES. THE TRUMP MEMES HAVE NOT BEEN REGISTERED UNDER ANY LAWS OF ANY JURISDICTION.</p>
-
-        <p>Requirements.</p>
-
-        <p>General. The Services are available only to individuals who can enter into legally binding contracts under applicable law. The Services are not intended for use by individuals under eighteen (18) years of age (or the applicable age of majority, if greater than eighteen (18) years of age in their respective jurisdictions). If you are under eighteen (18) years of age (or the applicable age of majority, if greater than eighteen (18) years of age) in your jurisdiction and/or if you are unable to enter into legally binding contracts and/or you are a Prohibited Party (defined below) you do not have permission to use and/or access the Services, and we may terminate your access to the Services at any time and for any reason in our sole discretion. In the case where you are an entity, you can only access the Services if you are duly incorporated, validly existing and in good standing under the laws of the jurisdiction of your incorporation.</p>
-
-        <p>Prohibited Users. The Services are not available to (i) individuals or entities (including those owned or controlled by individuals) that are the subject of economic or trade sanctions administered or enforced by any governmental authority or otherwise designated on any list of prohibited or restricted parties (including but not limited to the United Nations Security Council, the European Union, His Majesty&apos;s Treasury of the United Kingdom of Great Britain and Northern Ireland (the &quot;UK Treasury&quot;), and the U.S. Department of Treasury), (ii) individuals or entities based on the &quot;Denied Persons List&quot; by the Bureau of Industry and Security of the United States Department of Commerce; or (iii) residents and citizens of countries located in, or incorporated under the laws of any country, territory or other jurisdiction subject to a U.S. Government embargo, or that have been designated by the U.S. Government as a terrorist-supporting country, or is otherwise the subject of comprehensive country-wide, territory-wide, or regional economic sanctions by the United Nations, the European Union, the UK Treasury, or the United States, including without limitation Cuba, the Crimea, Donetsk, and Luhansk regions of Ukraine, Iran, North Korea, Russia, Syria, or Yemen (collectively, &quot;Prohibited Users&quot;).</p>
-
-        <p>Prohibited Access. In addition to the foregoing, individuals are not permitted to access the Services with a Jail-Broken Mobile Device, a Rooted Android Device, or the substantial equivalent thereof. For purposes of the Terms and Conditions, a &quot;Jail-Broken Mobile Device&quot; is a Mobile Device that runs Apple&apos;s iOS operating system that has had any of its iOS-based software restrictions removed via any procedure that is not fully endorsed and authorized by Apple and a &quot;Rooted Android Device&quot; is a smartphone, tablet or other device running the Android mobile operating system for which privileges root access control has been obtained thereby opening the operating system for additional customization.</p>
-
-        <p>Modification. We reserve the right to amend the Terms and Conditions and/or the Services from time to time without notice to you. The Terms and Conditions will be posted on the Website, and you should review the Terms and Conditions prior to using, reusing, accessing or re-accessing the Services. By your continued use of the Services, you hereby agree to comply with, and be bound by, all of the terms and conditions contained within these Terms and Conditions effective at that time.</p>
-
-        <p>Registration. You may be required to submit an applicable registration form. We reserve the right, in our sole discretion, to deny access to the Services to anyone at any time and for any reason whatsoever.</p>
-
-        <p>Wallet, Cryptocurrency and Technology Requirements. You shall be responsible, at all times, for obtaining and maintaining, at your sole cost and expense: (a) all input/output devices or equipment (such as a computer/mobile device, up-to-date Internet browser version, modems, terminal equipment, computer hardware and software) and communications services necessary to access certain Services and for ensuring that such equipment and services are compatible with all relevant requirements; (b) a functioning crypto asset wallet suitable for use with Solana blockchain-based assets (a &quot;Wallet&quot;) capable of accessing the Card(s); and (c) any cryptocurrencies necessary to purchase and/or sell the Trump Memes. We do not guarantee the quality, speed or availability of the Internet connection associated with any mobile device and/or computer. We do not guarantee that the Services can be accessed: (i) on all mobile devices; (ii) through all wireless service plans; (iii) in connection with all Internet browsers; and/or (iv) in all geographical areas. Standard messaging, data, Internet usage and blockchain transaction fees may apply to use of the Services. You are fully responsible for all such charges and we have no liability or responsibility to you, whatsoever, for any such charges.</p>
-
-        <p>You assume all risks associated with using an Internet-based blockchain networks including, but not limited to, the risk of hardware, software and Internet connections, the risk of malicious software introduction, and the risk that third parties may obtain unauthorized access to information stored on the blockchain and/or within your Wallet. Cryptographic assets, cryptocurrencies and blockchain technology are relatively new and the regulatory landscape is unsettled.</p>
-
-        <p>Trump Memes.</p>
-
-        <p>The Trump Memes are intended to function as an expression of support for, and engagement with, the ideals and beliefs embodied by the symbol &quot;TRUMP&quot; and the associated artwork and are not intended to be, or to be the subject of, an investment opportunity, investment contract, or security of any type. By using the Website and the Services, you acknowledge and agree that the Trump Memes should be traded solely as cryptographic assets intended to function as set forth above, and that you are acquiring the Trump Memes as an expression of support for, and engagement with, these ideals and beliefs and not as an investment opportunity, investment contract, or security of any type. Please be aware that the price of Trump Memes may be extremely volatile and you may experience substantial losses in connection with a sale or other disposition of Trump Memes. We make absolutely no promise or guarantee that the Trump Memes will increase in value or maintain the same value as the amount you paid to purchase same. No information and/or Content made available by and through the Services is or should be considered advice or recommendation or an invitation to enter into an agreement for any investment purpose. Further, no element of the Services qualifies or is intended to be an offering of securities in any jurisdiction, nor does it constitute an offer or an invitation to purchase shares, securities or other financial products. IT REMAINS YOUR SOLE AND EXCLUSIVE RESPONSIBILITY TO ASSURE THAT THE PURCHASE AND SALE OF THE TRUMP MEMES AND THE USE OF CRYPTOCURRENCIES COMPLIES WITH LAWS AND REGULATIONS IN YOUR JURISDICTION AND APPLICABLE JURISDICTIONS.</p>
-
-        <p>ALL TRANSACTIONS OF TRUMP MEMES ARE FINAL AND NON-REFUNDABLE. We shall have no responsibility or liability for any Memes that are lost, misplaced, or inaccessible.</p>
-
-        <p>You are solely responsible for reporting and paying any taxes applicable to your use of the Services in all relevant jurisdictions.</p>
-
-        <p>Items. With respect to any items that may be acquired, offered, or purchased by and through the Website, including without limitation the Trump Memes, we do not warrant that the item descriptions are accurate, complete, reliable, or error free. We have made every effort to display the Artwork associated with Trump Memes as accurately as possible on the Website. However, there may be differences between the Artwork as depicted on the Website and other depictions. For example, the actual colors you see may depend on the monitor/screen and other factors associated with your computer, mobile device or other device, as applicable, which you use to view the Artwork.</p>
-
-        <p>Content.</p>
-
-        <p>General Terms. Subject to the Terms and Conditions, users that possess the requisite technology shall have the opportunity to view, download and/or interact with all or some of the Content made available by and through the Website and/or other Services. We do not control Content provided by third-party providers that is made available by and through the Website and/or other Services. Please be advised that we do not verify or fact-check statements made by third-party providers, and that the third-party providers themselves are solely responsible for the accuracy, completeness, appropriateness, safety and/or usefulness of such Content. We do not represent or warrant that the Content and other information posted by and/or through the Website and/or other Services is accurate, complete, up-to-date or appropriate. You agree that we shall have no obligation and incur no liability to you in connection with any Content.</p>
-
-        <p>Non-Endorsement. The publication of any Content provided by third-party providers (including user content) by and through the Website and/or other Services does not constitute any type of endorsement of the subject third-party provider or third-party digital asset trading platform.</p>
-
-        <p>Compliance with Laws. You acknowledge that there are various rules, regulations and laws that address crypto assets and blockchain technology (collectively, &quot;Emerging Technology Laws&quot;), and that Emerging Technology Laws may be different by each individual U.S. state, or jurisdiction and jurisdictions outside the United States. In addition to the Emerging Technology Laws, you are also subject to all municipal, state and federal laws, rules and regulations of the city, state and jurisdiction in which you reside and from which you access the Website and its Services (together with Emerging Technology Laws, &quot;Applicable Laws&quot;). You agree to comply, and are solely responsible for your compliance with, all Applicable Laws. You acknowledge and agree that your purchase and/or sale of Trump Memes and use of cryptocurrency in connection therewith is at your own risk, and we cannot be held responsible or liable if any Applicable Law restricts or prohibits your access to, or ability to purchase and/or sell Trump Memes as more fully explained and agreed above.</p>
-
-        <p>Standards of Conduct. You warrant and represent that neither you nor any of your agents or other representatives has performed or will perform any of the following acts in connection with use of the Services, or any other transactions involving the business interests related to such use: offer or promise to pay, or authorize the payment of, any Card or merchandise, or give or promise to give, or authorize the giving of, any services or anything else of value, either directly or through a third party, to any official or employee of a public international organization or any private entity, or of any agencies or subdivisions thereof, or of any public international organizations or governmental instrumentalities, or to any political party or official thereof or to any candidate for political office for the purpose of: (i) influencing any act or decision of that person in his or her official capacity, including a decision to fail to perform his official functions with such government, instrumentalities, or private entity, (ii) inducing such person to use his influence with such government, instrumentalities, private entity to affect or influence any act or decision thereof or (iii) securing any improper advantage.</p>
-
-        <p>License Grant. As a user of the Website, you are granted a non-exclusive, non-transferable, revocable and limited license to access and use the Services and all other material, products and/or services posted or made available by and through same (collectively, the &quot;Material&quot;) in accordance with the Terms and Conditions. We may terminate this license at any time for any reason. Unless otherwise expressly authorized by us, you may only use the Material for your own personal, non-commercial use. No part of the Material may be reproduced in any form or incorporated into any information retrieval system, electronic or mechanical. You may not use, copy, emulate, clone, rent, lease, sell, modify, decompile, disassemble, reverse engineer or transfer the Material and/or any portion thereof. You may not create any &quot;derivative works&quot; by altering any aspect of the Material. You may not use Material in conjunction with any other third-party content. You may not exploit any aspect of the Material for any commercial purpose not expressly permitted by us (including the bundled sale of any Material). Systematic retrieval of the Material by automated means or any other form of scraping or data extraction in order to create or compile, directly or indirectly, a collection, compilation, database or directory without written permission from us is strictly prohibited. You further agree to indemnify and hold us harmless for your failure to comply with this section. We reserve all rights not explicitly granted in the Terms and Conditions.</p>
-
-        <p>Proprietary Rights. All Material is owned or licensed by or to us and is protected under applicable copyrights, trademarks and other proprietary (including, but not limited to, intellectual property) rights. Except as expressly provided in the Terms and Conditions, no part of the Material may be reproduced, recorded, retransmitted, sold, rented, broadcast, distributed, published, uploaded, posted, publicly displayed, altered to make new works, performed, digitized, compiled, translated or transmitted in any way to any other computer, Website or other medium or for any commercial purpose, without prior express written consent. Except as expressly provided herein, you are not granted any rights or license to patents, copyrights, trade secrets, rights of publicity or trademarks with respect to any of the Material. The posting of information or material on the Website does not constitute a waiver of any right in or to such information and/or materials, and we reserve all rights not expressly granted hereunder.</p>
-
-        <p>$TRUMP Gala Dinner Event</p>
-
-        <ul>
-            <li>The $TRUMP Gala Dinner is scheduled to take place on May 22, 2025 at Trump National Golf Club Washington D.C. but may be rescheduled to a different date or location, as determined in our sole discretion.</li>
-
-            <li>President Trump may not be able to attend the $TRUMP Gala Dinner, and the $TRUMP Gala Dinner may be cancelled for any reason (including, but not limited to, a force majeure event). In the event President Trump is unable to attend the $TRUMP Gala Dinner, or if the $TRUMP Gala Dinner does take place, then in our sole discretion, the $TRUMP Gala Dinner may be rescheduled to another date, or $TRUMP Meme holders who are qualified for the Gala Dinner and/or reception will receive a limited edition TRUMP NFT in lieu thereof.</li>
-
-            <li>All expenses incurred by the verified dinner recipients in connection with attending the $TRUMP Gala Dinner (including, but not limited to, travel costs, ground and other transportation, parking, meals, gratuities and incidental hotel expenses) are the sole responsibility of verified $TRUMP Gala Dinner recipients.</li>
-
-            <li>All $TRUMP Gala Dinner recipients and guests (if applicable) must be 18 years or older and the age of majority in their local jurisdiction, will be required to sign a release and any other requested documents, and must undergo security screening and background investigation and be approved in advance as determined by us in our sole discretion.</li>
-        </ul>
-
-        <p>Indemnification. To the fullest extent permissible by applicable law, you agree to indemnify and hold the Covered Parties harmless from and against any and all claims, expenses (including reasonable attorneys&apos; fees), damages, suits, costs, demands and/or judgments whatsoever, made by any third party due to or arising out of: (a) your use of the Services; (b) your breach of the Terms and Conditions and/or violation of Applicable Law; (c) any dispute between you and any other users and/or other third parties; (d) any claim that we owe any taxes, fees, penalties or fines in connection with your use of the Services; and/or (e) your violation of any rights of another individual and/or entity. The provisions of this Section &quot;Indemnification&quot; are for the benefit of us and the other Covered Parties. To the fullest extent permissible by applicable law, each of these individuals and entities shall have the right to assert and enforce these provisions directly against you on its own behalf.</p>
-
-        <p>Disclaimer of Warranties. THE SERVICES, INCLUDING THE TRUMP MEMES, MATERIAL, AND/OR SERVICES OFFERED IN CONNECTION WITH SAME, ARE PROVIDED TO YOU ON AN &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; BASIS AND ALL WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, REGARDING THEIR FUNCTIONALITY, RELIABILITY, OR AVAILABILITY ARE DISCLAIMED TO THE FULLEST EXTENT PERMISSIBLE PURSUANT TO APPLICABLE LAW (INCLUDING, BUT NOT LIMITED TO, THE DISCLAIMER OF ANY WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT OF INTELLECTUAL PROPERTY AND/OR FITNESS FOR A PARTICULAR PURPOSE AND FREEDOM FROM COMPUTER VIRUS OR OTHER MALICIOUS, DESTRUCTIVE OR CORRUPTING CODE, AGENT, PROGRAM OR MACROS, THIS AGREEMENT OR ANY INFORMATION AND MATERIALS PROVIDED TO YOU). IN PARTICULAR, BUT NOT AS A LIMITATION THEREOF, WE MAKE NO WARRANTY THAT THE SERVICES, INCLUDING THE TRUMP MEMES, MATERIAL, AND/OR ANY OTHER SERVICES OFFERED IN CONNECTION WITH SAME, AS WELL AS ANY BLOCKCHAIN TECHNOLOGY: (A) WILL MEET YOUR REQUIREMENTS; (B) WILL BE UNINTERRUPTED, TIMELY, SECURE, ERROR-FREE OR THAT DEFECTS WILL BE CORRECTED; (C) WILL BE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS; (D) WILL HAVE SECURITY METHODS EMPLOYED THAT WILL BE SUFFICIENT AGAINST INTERFERENCE WITH YOUR ENJOYMENT OF SAME, OR AGAINST INFRINGEMENT; (E) WILL RESULT IN ANY SPECIFIC INVESTMENT INCOME, BENEFITS OR OTHER FINANCIAL OUTCOME; AND/OR (F) WILL BE ACCURATE OR RELIABLE. THE SERVICES, MATERIAL AND/OR ANY OTHER PRODUCTS AND/OR SERVICES OFFERED IN CONNECTION WITH SAME MAY CONTAIN BUGS, ERRORS, PROBLEMS OR OTHER LIMITATIONS. WE WILL NOT BE LIABLE FOR THE AVAILABILITY OF THE UNDERLYING INTERNET CONNECTION ASSOCIATED WITH THE WEBSITE OR ANY OF THE UNDERLYING BLOCKCHAIN NETWORK. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM ANY SOURCE SHALL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THE AGREEMENT. YOU ACKNOWLEDGE THAT YOU HAVE NOT RELIED UPON ANY REPRESENTATIONS OR WARRANTIES MADE BY US OR BY ANY PERSON ON BEHALF OF US.</p>
-
-        <p>Please be aware that the price of the Trump Memes may be extremely volatile, and price fluctuations in cryptocurrencies could impact the price of the Trump Memes both positively and negatively. Trump Memes should not under any circumstances be considered an investment opportunity, investment contract, or security of any type, as more fully explained and agreed above. You assume all risks in connection therewith. This Website and its contents are for informational purposes only. No information and/or Content made available by and through the Services constitutes or should be considered financial, investment, legal and/or professional advice or recommendation. The Trump Memes are not designed or intended as an investment opportunity, investment contract, or security of any type and should not be considered a financial investment. Further, no element of the Services qualifies or is intended to be a solicitation or an offering to buy or sell securities, financial products, or services, in any jurisdiction, nor does it constitute an offer or an invitation to purchase shares, securities or other financial products or services. IT REMAINS YOUR SOLE AND EXCLUSIVE RESPONSIBILITY TO ASSURE THAT THE PURCHASE AND SALE OF TRUMP MEMES, AND THE USE OF CRYPTOCURRENCIES, COMPLIES WITH LAWS AND REGULATIONS IN YOUR JURISDICTION.</p>
-
-        <p>You assume all risks associated with using an Internet-based blockchain technology and cryptographic asset including, but not limited to, the risk of hardware, software and Internet connections, the risk of malicious software introduction, and the risk that third parties may obtain unauthorized access to information stored within your Wallet, as more fully explained and agreed above. Cryptographic assets, cryptocurrencies and blockchain technology are relatively new and the regulatory landscape is unsettled, as more fully explained and agreed above. New regulations could negatively impact such technologies impacting the value for your Trump Memes. You understand and accept all risk in that regard, as more fully explained and agreed above. Without limiting the foregoing, you assume all responsiblity for any adverse effects of disruptions or other issues impacting the Solana blockchain, as more fully explained and agreed above. We do not guarantee the functionality, reliability, traceability, or future availability of the Trump Memes in the event of disruptions, regulatory changes, or other unforeseen circumstances.</p>
-
-        <p>LIMITATION OF LIABILITY. YOU EXPRESSLY UNDERSTAND AND AGREE THAT WE SHALL NOT BE LIABLE TO YOU OR ANY THIRD-PARTY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, ENHANCED AND/OR ANY DAMAGES WHATSOEVER (INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR LOSS OF PROFITS, STATUTORY DAMAGES, GOODWILL, USE, DATA OR OTHER INTANGIBLE LOSSES (EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES), TO THE FULLEST EXTENT PERMISSIBLE BY LAW FOR: (A) THE USE OR THE INABILITY TO USE THE SERVICES, TRUMP MEMES, MATERIAL, AND/OR ANY OTHER SERVICES OFFERED IN CONNECTION WITH SAME; (B) THE COST OF PROCUREMENT OF SUBSTITUTE GOODS AND/OR SERVICES RESULTING FROM ANY GOODS, DATA, INFORMATION, CONTENT AND/OR ANY OTHER PRODUCTS PURCHASED OR OBTAINED FROM OR THROUGH THE WEBSITE; (C) THE UNAUTHORIZED ACCESS TO, OR ALTERATION OF, YOUR REGISTRATION DATA; (D) ANY MATTER RELATED TO THE BLOCKCHAIN NETWORK, CRYPTOCURRENCIES AND/OR ANY BLOCKCHAIN-BASED WALLET; (E) THE FAILURE TO REALIZE ANY REVENUE OR OTHER FINANCIAL OUTCOME; AND/OR (F) ANY OTHER MATTER RELATING TO THE SERVICES, TRUMP MEMES, MATERIAL, AND/OR ANY OTHER SERVICES OFFERED IN CONNECTION WITH SAME. TO THE FULLEST EXTENT PERMISSIBLE BY LAW, THIS LIMITATION APPLIES TO ALL CAUSES OF ACTION, IN THE AGGREGATE INCLUDING, BUT NOT LIMITED TO, BREACH OF CONTRACT, BREACH OF WARRANTY, NEGLIGENCE, STRICT LIABILITY, VIOLATIONS OF LAW AND CIVIL REMEDIES BASED THEREON, DECEPTIVE AND UNFAIR TRADE PRACTICES, MISREPRESENTATIONS AND ANY AND ALL OTHER TORTS. TO THE FULLEST EXTENT PERMISSIBLE BY LAW YOU HEREBY RELEASE US FROM ANY AND ALL OBLIGATIONS, LIABILITIES AND CLAIMS IN EXCESS OF THE LIMITATIONS STATED HEREIN. IF APPLICABLE LAW DOES NOT PERMIT SUCH LIMITATION, OUR MAXIMUM LIABILITY TO YOU UNDER ANY AND ALL CIRCUMSTANCES WILL BE FIVE HUNDRED U.S. DOLLARS (US$500.00). THE NEGATION OF DAMAGES SET FORTH ABOVE IS A FUNDAMENTAL ELEMENT OF THE BASIS OF OUR BARGAIN WITH YOU, AND WE WOULD NOT BE PERMITTED YOUR ACCESS TO THE SERVICES, TRUMP MEMES, MATERIAL, AND/OR ANY OTHER SERVICES OFFERED IN CONNECTION WITH SAME WOULD NOT BE PROVIDED TO YOU WITHOUT SUCH LIMITATIONS. SOME JURISDICTIONS DO NOT ALLOW CERTAIN LIMITATIONS ON LIABILITY AND, IN SUCH JURISDICTIONS, OUR LIABILITY SHALL BE LIMITED TO THE MAXIMUM EXTENT PERMITTED BY LAW.</p>
-
-        <p>FOR CALIFORNIA RESIDENTS: EACH ENTRANT UNDERSTANDS AND AGREES THAT ALL RIGHTS UNDER SECTION 1542 OF THE CIVIL CODE OF CALIFORNIA AND ANY SIMILAR LAW OF ANY STATE OF THE UNITED STATES ARE HEREBY EXPRESSLY WAIVED BY HIM/HER AGAINST THE COVERED PARTIES. SECTION 1542 READS AS FOLLOWS:</p>
         
-        <p>
-        <strong>“CERTAIN CLAIMS NOT AFFECTED BY A GENERAL RELEASE.</strong> A GENERAL RELEASE DOES NOT EXTEND TO CLAIMS THAT THE CREDITOR OR RELEASING PARTY DOES NOT KNOW OR SUSPECT TO EXIST IN HIS OR HER FAVOR AT THE TIME OF EXECUTING THE RELEASE AND THAT, IF KNOWN BY HIM OR HER, WOULD HAVE MATERIALLY AFFECTED HIS OR HER SETTLEMENT WITH THE DEBTOR OR RELEASED PARTY.”
-      </p>
+        <div className="section">
+          <h2 className='font-bold underline'>1. Eligibility.</h2>
+          <ol type="a" className="subsection">
+            <li className='mx-5 mt-5'>
+              a.You hereby represent and warrant that you have the full right, power, and
+              authority to agree to, abide by and comply with these Terms and Conditions, and
+              to access the Services. You further represent and warrant that you are of the legal
+              age of majority in your applicable jurisdiction. You acknowledge and agree that
+              you are solely responsible for ensuring compliance with any and all applicable
+              laws and/or regulations in your local jurisdiction, and that we shall not be liable to
+              any extent for your compliance or failure to comply with any such laws and/or
+              regulations.
+            </li>
+            <li className='mx-5 mt-5'>
+              b.The Services are not available to (i) individuals or entities (including those owned
+              or controlled by individuals) that are the subject of economic or trade sanctions
+              administered or enforced by any governmental authority or otherwise designated
+              on any list of prohibited or restricted parties (including but not limited to the
+              United Nations Security Council, the European Union, His Majesty&apos;s Treasury of
+              the United Kingdom of Great Britain and Northern Ireland (the &quot;UK Treasury&quot;),
+              and the U.S. Department of Treasury), (ii) individuals or entities based on the
+              &quot;Denied Persons List&quot; by the Bureau of Industry and Security of the United
+              States Department of Commerce; or (iii) residents and citizens of countries
+              located in, or incorporated under the laws of any country, territory or other
+              jurisdiction subject to a U.S. federal or state government embargo, or that have
+              been designated by the U.S. federal government as a terrorist-supporting country,
+              or is otherwise the subject of comprehensive country-wide, territory-wide, or
+              regional economic sanctions by the United Nations, the European Union, the UK
+              Treasury, or the United States, including without limitation Cuba, the Crimea,
+              Donetsk, and Luhansk regions of Ukraine, Iran, North Korea, Russia, Syria, or
+              Yemen (collectively, &quot;Prohibited Users&quot;). By using the Services, you represent
+              and warrant that you are not a Prohibited User.
+            </li>
+            <li className='mx-5 mt-5'>
+              c.You further represent and warrant that all funds and/or assets (e.g., digital assets,
+              such as that digital asset commonly known as [&quot;Solana,&quot; and/or &quot;$SOL&quot;]) used
+              by you in connection herewith [(e.g., for payment of the Purchase Price (as
+              defined below), etc.)] have been lawfully obtained by you in compliance with all
+              applicable laws and/or regulations. You acknowledge that third party service
+              providers may require you to provide additional information and/or
+              documentation and/or take certain action(s) in order to ensure compliance with
+              applicable laws and/or regulations (e.g., those related to anti-money laundering,
+              etc.), and agree that you will provide any such additional information and/or
+              documentation and/or take such action(s) upon request. You further acknowledge
+              and agree that we and/or our designee(s) may remove your access to the Service
+              at any time, for any reason, with or without notice to you.
+            </li>
+          </ol>
+        </div>
+        
+        <div className="section">
+          <h2 className='font-bold underline'>2. $DIDDY Ownership and Distribution.</h2>
+          <ol type="a" className="subsection">
+            <li className='mx-5 mt-5'>
+              a.Diddy Memes are created, developed, and minted on the Solana blockchain by
+              Meme Group. Each Diddy Meme, prior to its initial transfer and sale, is controlled
+              by Meme Group. Meme Group presently intends for a total supply of 1 billion
+              Diddy Memes, with the following allocation:
+              <ol type="i" className="sub-subsection">
+                <li className='mx-5 mt-5'>i. 10% to be made available for sale through the Purchase Links;</li>
+                <li className='mx-5 mt-5'>ii. 10% for future sales;</li>
+                <li className='mx-5 mt-5'>iii. 10% to the Development Team (as defined below); and</li>
+                <li className='mx-5 mt-5'>iv. 70% to Combs Brothers Productions LLC.</li>
+              </ol>
+            </li>
+            <li className='mt-5 mx-5'>
+              b.<span className='italic'>Allocation to Meme Group.</span> The Diddy Memes allocated to Combs Brothers
+              Productions LLC and its commercial partners (the &quot;Development Team&quot;), are
+              subject to programmatic restrictions whereby 100% of their respective allocations
+              are locked until 3 months following the first sale of a Diddy Meme through the
+              Purchase Links. Thereafter, 2.78% of their respective allocations are released
+              from such lock-up restrictions on a monthly basis over the following 36 months.
+              You acknowledge that the Development Team and Combs Brothers Productions
+              LLC are under no obligation whatsoever to use or not use the Diddy Memes
+              released from such lock-up restrictions and will be permitted to sell or transfer
+              their unlocked Diddy Memes. Any effort by the Development Team and Combs
+              Brothers Productions LLC to sell all or a portion of their Diddy Memes would
+              significantly increase the circulating supply of Diddy Memes and could adversely
+              impact secondary markets and/or prices Diddy Memes, if any exist.
+            </li>
+            <li className='mt-5 mx-5'>
+              c.<span className='italic'>Allocation for Future Sales.</span> You further acknowledge that a material portion of
+              the total supply of Diddy Memes is reserved for future sales by the Meme Group,
+              which could happen at any time and without notice to you.
+            </li>
+            <li className='mt-5 mx-5'>
+              d.<span className='italic'>Proceeds from Present Sale.</span> Proceeds and transaction fees collected from the sale
+              of Diddy Meme though Purchase Links and any subsequent transactions
+              (&quot;Proceeds&quot;) will be retained by the Meme Group and allocated amongst us in
+              our sole discretion. The Meme Group makes no representation or warranties
+              regarding whether we will use such Proceeds for a particular purpose. You
+              expressly acknowledge and agree that the Meme Group may use such Proceeds
+              for any purpose and that you have no right to participate in any manner in any
+              activities, profits, or income, derived by or resulting from the Proceeds.
+            </li>
+          </ol>
+        </div>
+        
+        <div className="section">
+          <h2 className='font-bold underline'>3. Sales, Prices and Taxes.</h2>
+          <ol type="a" className="subsection">
+            <li className='mt-5 mx-5'>
+              a.Diddy Memes are not available for purchase directly on the Website but may be
+              purchased through services and platforms provided by third-parties or hosted on
+              decentralized applications (&quot;Purchase Links&quot;), which are included among the
+              Third-Party Links. When you click on such a link, we will not warn you that you
+              are about to or have left the Services. Meme Group does not control and is not
+              responsible for any content or services accessible through Third-Party Links,
+              which are provided pursuant to their own separate terms of service (&quot;Third-Party
+              Terms&quot;) that differ from ours.
+              <br /><br />
+              You agree that your relationships with such third-party service providers will be
+              governed by the applicable Third-Party Terms. Your use of all Third-Party Links,
+              including Purchase Links, is at your own risk.
+            </li>
+            <li className='mt-5 mx-5'>
+              b.Generally, the advertised price of Diddy Memes will determined by market
+              conditions, and as such, is likely to fluctuate up and/or down. Any order(s) placed
+              through the Purchase Links may require immediate payment in full of the
+              applicable purchase price (the &quot;Purchase Price&quot;) at the time of purchase, and
+              shall be non-refundable. You hereby acknowledge and agree that, due to the
+              nature of blockchain technology, once any transaction representing such order(s)
+              has been broadcast to the Designated Blockchain (as defined below), such order
+              cannot be cancelled or reversed for any reason.
+            </li>
+            <li className='mt-5 mx-5'>
+              c.You further acknowledge and agree that, due to the nature of blockchain
+              technology, the consensus rules of the Designated Blockchain may require the
+              payment of an additional per-transaction fee (a &quot;Gas Fee&quot;).
+            </li>
+            <li className='mt-5 mx-5'>
+              d.You will be solely responsible to pay any and all Gas Fee(s) associated with the
+              blockchain-based transactions that you conduct in connection with the sale and/or
+              acquisition of any Diddy Memes. You further acknowledge and agree that any
+              subsequent sale(s) and/or transfer(s) of any Diddy Memes may be subject to
+              royalties and/or other fees imposed by the third-party marketplace(s) that facilitate
+              such sale(s) and/or transfer(s), and, in the event that any such royalties and/or fees
+              are paid or accrue, Meme Group may receive a portion thereof. Any such sale(s)
+              and/or transfer(s) shall be subject to the terms and conditions applicable to and set
+              forth by any such applicable marketplace(s).
+            </li>
+            <li className='mt-5 mx-5'>
+              e.You are solely responsible for paying any taxes applicable to your purchase and
+              use of Diddy Memes in all relevant jurisdictions.
+            </li>
+          </ol>
+        </div>
+        
+        <div className="section">
+          <h2 className='font-bold underline'>4. Delivery.</h2>
+          <p className='mx-5 mt-5'>
+            In order to purchase and receive any Diddy Memes through the
+            Purchase Links, you may be required to connect your digital-asset wallet to the Third
+            Party&apos;s application or platform. You acknowledge and agree that we shall not bear any
+            responsibility for any Diddy Memes misdelivered as a result of incorrect information
+            provided by you or by any error by the Third Party, and that you shall bear sole
+            responsibility for ensuring that your digital-asset wallet is accurately and properly used.
+          </p>
+        </div>
 
-      <p>
-        <strong>Third-Party Websites.</strong> The Services may provide links to other websites and/or resources, including social media websites and digital asset trading platforms. We have no control over such third-party websites and/or resources. Furthermore, we do not endorse and are not responsible or liable for (i) any terms and conditions, privacy policies, content, advertising, services, products, and/or other materials available at or from such third-party websites or resources; or (ii) any damages and/or losses arising from or associated with your use of such third-party websites, platforms, or resources, including but not limited to trading activities on digital asset trading platforms.
-      </p>
+        <div className='section'>
+          <h2 className="font-bold underline mb-4">5. Diddy Memes</h2>
+          <ol className="list-none pl-6 space-y-2 mb-6">
+            <li>
+              <p className="mb-2">a. The Diddy Memes are Solana blockchain-based fungible cryptocurrency tokens. 
+              The Diddy Memes embedded with a digital artwork that is the intellectual 
+              property of Meme Group (the &quot;Associated Artwork&quot;). The Associated Artwork is 
+              separate from the Diddy Meme associated therewith, and your rights, title and 
+              interests therein shall be licensed to you solely as set forth in Section [6] below.</p>
+            </li>
+            <li>
+              <p className="mb-2">b. The Services are not provided, and the Diddy Memes are not sold or distributed, 
+              by Sean Combs or his affiliates. We use the &quot;DIDDY&quot; name and the name, image, 
+              and likeness of Sean Combs pursuant to a limited license agreement.</p>
+            </li>
+            <li>
+              <p className="mb-2">c. The Diddy Memes have no present or planned utility but are intended to function 
+              as an expression of enthusiasm, and engagement with, the ideals, beliefs 
+              embodied by the symbol &quot;DIDDY&quot; and the Associated Artwork. Accordingly, 
+              Diddy Memes should only be purchased for the social, cultural, and entertainment 
+              benefit you derive from expressing such enthusiasm or engagement. Diddy 
+              Memes are not intended to be, or to be the subject of, an investment opportunity, 
+              investment contract, or security of any type. No federal or state agency or any 
+              other governmental authority has passed on or made any recommendation or 
+              endorsement of the Diddy Memes.</p>
+            </li>
+          </ol>
+        </div>                
+        
 
-      <p>
-        We are not responsible for the availability, functionality, security, or performance of any digital asset trading platforms on which the Trump Memes may be traded. Trading or transferring Trump Memes on such platforms is entirely at your own risk and is subject to the terms and conditions, privacy policies, and fee structures of the respective platforms.
-      </p>
+        <h2 className="font-bold underline mb-4">6. Grant of Rights</h2>
+        <p className="mx-5 mb-4">Subject to and fully conditioned upon your continued compliance 
+        with these Terms and Conditions, and solely for so long as you own a Diddy Meme 
+        embedded with the Associated Artwork, we grant you a revocable, limited, personal, non-
+        exclusive, non-sublicensable, worldwide license to display, perform and distribute such 
+        Associated Artwork solely (i) for non-commercial, personal use, including within 
+        audiovisual media (e.g., displaying such Associated Artwork on a platform or service, 
+        including online games or online environment(s) that may be commonly known as 
+        &quot;metaverse(s)&quot;, for personal, non-commercial purposes); and/or (ii) in connection with 
+        your attempt(s) to sell or otherwise transfer your Diddy Meme(s) to any other person or 
+        entity, in each case subject to the terms and conditions set forth herein (the &quot;License&quot;). 
+        You acknowledge and agree that we may revoke, amend, remove or otherwise modify the 
+        License granted to you, for any reason, with or without notice to you.</p>
+        
+        <p className="mx-5 mb-4">Notwithstanding anything to the contrary and for the avoidance of doubt, the foregoing 
+        shall not permit the use of, and you will not, and you will not authorize, permit or assist any third 
+        party to, directly or indirectly use, any Associated Artwork in connection with any of the 
+        following:</p>
+        
+        <ol className="mx-5 list-none pl-6 space-y-2 mb-6">
+          <li>
+            <p className="mb-2">a. any illegal product or service or any other use in violation of applicable law;</p>
+          </li>
+          <li>
+            <p className="mb-2">b. any physical or digital firearm or weapon;</p>
+          </li>
+          <li>
+            <p className="mb-2">c. any physical or digital tobacco product, pharmaceutical product or regulated drug, 
+            or product, substance or material containing any tobacco product or regulated 
+            drug (excluding alcohol);</p>
+          </li>
+          <li>
+            <p className="mb-2">d. any counterfeit physical or digital product;</p>
+          </li>
+          <li>
+            <p className="mb-2">e. any product, service, content, material or speech that is defamatory, obscene, 
+            pornographic, indecent, abusive, offensive, harassing, violent, hateful, racist, 
+            discriminatory, inflammatory or otherwise objectionable, inappropriate or harmful 
+            to our intellectual property and/or goodwill, as determined by us in our sole 
+            discretion; and/or</p>
+          </li>
+          <li>
+            <p className="mb-2">f. any other digital collectible project (including without limitation, fungible or non-
+            fungible blockchain-based tokens) that would use or incorporate any Associated 
+            Artwork.</p>
+          </li>
+        </ol>
 
-      <p>
-        <strong>WE DISCLAIM ANY LIABILITY FOR ANY PRICE FLUCTUATIONS, MARKET CONDITIONS, OR TRADING VOLUME OF TRUMP MEMES ON THIRD-PARTY TRADING PLATFORMS; LOSS OF FUNDS OR CRYPTO ASSETS DUE TO TECHNICAL ERRORS, HACKING INCIDENTS, OR OTHER SECURITY BREACHES ON THIRD-PARTY PLATFORMS;</strong> ANY DECISIONS OR ACTIONS TAKEN BY THIRD-PARTY TRADING PLATFORMS, INCLUDING LISTING OR DELISTING TRUMP MEMES, OR IMPOSING TRADING RESTRICTIONS. By using these third-party platforms, you agree to independently review and accept their terms, and you understand that we are not involved in or liable for their operations.
-      </p>
+        <h2 className="font-bold underline mb-4">7. Ownership and Limitations</h2>
+        <p className="mx-5 mb-4">We retain all rights, title and interest in the Website 
+        Content and Associated Artwork, and all copyrights and/or other intellectual property 
+        rights therein. Except as specifically set forth in Section 6 above, you do not have and 
+        will not have any right, title or interest in or to any Associated Artwork and you shall not 
+        be deemed to be granted any rights, whether express or implied, with respect to any 
+        Associated Artwork or any derivative works thereof.</p>
+        
+        <p className="mx-5 mb-4">For avoidance of doubt, you have no right to, and you will not, and you will not 
+        authorize, permit or assist any third party to, use any name, trademark, logo, branding or other 
+        intellectual property of Meme Group or any affiliate, commercial partner or licensor of Meme 
+        Group, or of Sean Combs, for any purpose not specifically set forth herein, or otherwise do or 
+        say anything to indicate or imply that we or any of our affiliates sponsors, promotes or endorses 
+        any product, service or media or provides any representations or warranties with respect to any 
+        product, service or media.</p>
+        
+        <p className="mx-5 mb-4">For the avoidance of doubt, if at any time you transfer a Diddy Meme to a third party, any 
+        rights granted to you hereunder with respect to such Diddy Meme and the Associated Artwork 
+        associated therewith shall immediately terminate (without the requirement of notice) with no 
+        outstanding or ongoing obligation or liability to you.</p>
 
-      <p>
-        <strong>Privacy Policy.</strong> All comments, information, Registration Data and/or materials that you submit through or in association with the Services shall be subject to our Privacy Policy, which is hereby incorporated by reference. For a copy of the Privacy Policy, please <a href="#" className="text-blue-600 underline">Click Here</a>.
-      </p>
+        <h2 className="font-bold underline mb-4">8. Blockchain Forks</h2>
+        <ol className="list-none pl-6 space-y-2 mb-6">
+          <li>
+            <p className="mb-2">a. You acknowledge and agree that the Diddy Memes sold through the Purchase 
+            Links exist on the version of the Solana digital blockchain ledger and network 
+            that is recognized by the nodes or validators of such network as canonical as of 
+            the time of such sale (the &quot;Designated Blockchain&quot;); provided that, for the 
+            avoidance of doubt, the Designated Blockchain does not refer to any Persistent 
+            Forks (as defined below), any digital blockchain ledgers which are not operating 
+            in a production environment or blockchains which are referred to as a &quot;testnet&quot;. 
+            As used herein, a &quot;Persistent Fork&quot; means a digital blockchain ledger and 
+            network generally recognized in the blockchain industry as the mainnet and 
+            consensus blockchain of a persistent &quot;contentious hardfork&quot; from the Designated 
+            Blockchain, which such hardfork has or would reasonably be expected to have 
+            material value independent from the Designated Blockchain.</p>
+          </li>
+          <li>
+            <p className="mb-2">b. In the event of a Persistent Fork that creates a copy(ies) of any Diddy Memes at 
+            the same addresses at which they were then held on the Designated Blockchain, 
+            the scope of the term &quot;you&quot; under these Terms, and all licenses granted to and 
+            other rights of you under these Terms, shall be deemed expanded to include each 
+            person who lawfully holds exclusive title to and ownership of the copy(ies) of the 
+            applicable Diddy Memes that are included on the Persistent Fork. You hereby 
+            acknowledge and agree that, as a result of the preceding sentence, in the event of 
+            a Persistent Fork, the aggregate number of the Diddy Memes may be increased 
+            and/or unlimited minting of such Diddy Memes may be permitted.</p>
+          </li>
+        </ol>
 
-      <p>
-        <strong>Dispute Resolution Provisions.</strong> The Terms and Conditions shall be governed by and construed in accordance with the laws of the State of Delaware (without regard to conflict of law principles). The parties (and Covered Parties) hereby agree to arbitrate all claims that may arise under and/or relate to the Services and/or the Terms and Conditions. Without limiting the foregoing, should a dispute arise between the parties/any Covered Parties including, without limitation, any matter concerning the Services, the terms and conditions of the Terms and Conditions or the breach of same by any party hereto: (a) the parties/Covered Parties agree to submit their dispute for resolution by arbitration before JAMS in Delaware, in accordance with their then-current commercial arbitration rules; and (b) you agree to first commence a formal dispute proceeding by completing and submitting an initial Dispute Notice which can be found <a href="#" className="text-blue-600 underline">Here</a>.
-      </p>
+        <h2 className="font-bold underline mb-4">9. Assumption of Risk</h2>
+        <p className="mx-5 mb-4">You acknowledge that the Diddy Memes and/or Associated 
+        Artwork is/are made available solely for social, cultural, and entertainment purposes and 
+        not as an investment instrument of any kind. Accordingly, you acknowledge and agree 
+        that you assume the following risks:</p>
+        
+        <ol className="mx-5 list-none pl-6 space-y-2 mb-6">
+          <li>
+            <p className="mb-2">a. to the extent there is a secondary market and/or price for Diddy Memes, such 
+            prices may be extremely volatile and you may experience substantial losses in 
+            connection with a sale or other disposition of Diddy Memes. We make absolutely 
+            no promise or guarantee that the Diddy Memes will increase in value or maintain 
+            the same value as the amount you paid to purchase same;</p>
+          </li>
+          <li>
+            <p className="mb-2">b. risks associated with digital assets (including Diddy Memes) include, but are not 
+            limited to, (i) hardware, software and/or Internet failures, (ii) the loss of access to 
+            Diddy Memes due to, e.g., loss of so-called &quot;private key(s)&quot; or third-party 
+            custodial error, (iii) malicious software introduction (e.g., hacking or cyber-
+            attacks), and/or (iv) that third parties may obtain unauthorized access to 
+            information stored within your so-called &quot;digital wallet&quot; or elsewhere (e.g., 
+            fraud);</p>
+          </li>
+          <li>
+            <p className="mb-2">c. upgrades, so-called &quot;hard forks,&quot; failures, cessations or other changes to the 
+            blockchain(s) underlying the Diddy Memes that may affect your access to and/or 
+            use of any Diddy Memes or Associate Artwork;</p>
+          </li>
+          <li>
+            <p className="mb-2">d. risks associated with third-party software providers, marketplaces and/or other 
+            actors that may be associated with any Diddy Meme(s), including with respect to 
+            the continued availability of such third party(ies) and/or the protection and/or 
+            storage of any digital assets or other data that you may provide to such third 
+            party(ies);</p>
+          </li>
+          <li>
+            <p className="mb-2">e. the risk of changes to the regulatory and/or policy regime(s) governing blockchain 
+            technologies (e.g., digital assets) which may adversely affect your access to and/ 
+            or use of any Diddy Meme or Associated Artwork;</p>
+          </li>
+          <li>
+            <p className="mb-2">f. risks associated with transaction(s) between you and any third party(ies) (e.g., 
+            your transfer of Diddy Meme(s) to any such third party).</p>
+          </li>
+        </ol>
+        
+        <p className="mx-5 mb-4">In addition to assuming all of the above risks, you acknowledge that you have obtained 
+        sufficient information to make informed decision(s) with respect to the Diddy Memes (including, 
+        without limitation, the acquisition thereof and/or your entering into these Terms and Conditions) 
+        and that you understand and agree that you are solely responsible for determining the nature, 
+        suitability and appropriateness of these risks for yourself.</p>
 
-      <p>
-        The Covered Party(ies) named in your Initial Dispute Notice (collectively, the “Named Parties”) may choose to provide you with a final written settlement offer after receiving your Initial Dispute Notice (“Final Settlement Offer”). If the applicable Named Party(ies) provide(s) you with a Final Settlement Offer and you do not accept it, or such Named Party(ies) cannot otherwise satisfactorily resolve your dispute and you wish to proceed, you must submit your dispute for resolution by arbitration before the JAMS office New Castle County, Delaware or, for US residents, your US county of residence, by filing a separate Demand for Arbitration. For claims of Ten Thousand Dollars ($10,000.00) or less, you can choose whether the arbitration proceeds in person, by telephone or based only on submissions.
-      </p>
+        <h2 className="font-bold underline mb-4">10. Indemnification</h2>
+        <p className="mx-5 mb-4">To the fullest extent permitted by applicable law, you agree to 
+        indemnify, defend and hold harmless the Covered Parties from and against all actual or 
+        alleged claims, damages, awards, judgments, losses, liabilities of every kind and nature 
+        whatsoever (including, without limitation, attorneys&quot; fees and other legal expenses), 
+        whether known or unknown, that are caused by, arise out of or are related to (a) your 
+        ownership, use or misuse of any Diddy Meme and/or Associated Artwork; (b) your 
+        breach or violation of these Terms; and/or (c) your breach or violation of any right(s) of 
+        any third party (collectively, &quot;Claims&quot;). You agree to promptly notify us of any Claim(s) 
+        and shall cooperate fully with the Covered Parties in defending such Claims. You further 
+        agree that the Covered Parties shall have control of the defense or settlement of any third 
+        party Claims. THIS INDEMNITY IS IN ADDITION TO, AND NOT IN LIEU OF, ANY 
+        OTHER INDEMNITIES SET FORTH IN ANY WRITTEN AGREEMENT(S) 
+        BETWEEN YOU AND US.</p>
 
-      <p>
-        If the arbitrator awards relief that is greater than the applicable Final Settlement Offer, then the Named Party(ies) will pay all filing, administration and arbitrator fees associated with the arbitration and, if you retained an attorney to represent you in connection with the arbitration, the Named Party(ies) will reimburse any reasonable attorneys’ fees that your attorney accrued for investigating, preparing and pursuing the claim in arbitration. Any award rendered shall be final and conclusive to the parties and a judgment thereon may be entered in any court of competent jurisdiction. Although the Named Party(ies) may have a right to an award of attorneys’ fees and expenses if Named Party(ies) prevail(s) in arbitration, the Named Party(ies) will not seek such an award from you unless the arbitrator determines that your claim was frivolous.
-      </p>
+        <h2 className="font-bold underline mb-4">11. Limitation of Liability; Release</h2>
+        <ol className="list-none pl-6 space-y-2 mb-6">
+          <li>
+            <p className="mb-2">a. EXCEPT AS EXPRESSLY PROVIDED TO THE CONTRARY IN A WRITING 
+            BY US, THE DIDDY MEMES AND/OR ASSOCIATED ARTWORK ARE 
+            PROVIDED ON AN &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; &quot;BASIS WITHOUT 
+            WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR 
+            IMPLIED. Meme Group (AND ITS AFFILIATE(S), LICENSOR(S) AND/OR 
+            OTHER BUSINESS ASSOCIATE(S)) MAKES NO WARRANTY THAT THE 
+            FOREGOING: (A) WILL MEET YOUR REQUIREMENTS; (B) WILL BE 
+            AVAILABLE ON AN UNINTERRUPTED, TIMELY, SECURE OR ERROR-
+            FREE BASIS; OR (C) WILL BE ACCURATE, RELIABLE, COMPLETE, 
+            LEGAL OR SAFE. WE DISCLAIM ALL OTHER WARRANTIES OR 
+            CONDITIONS, EXPRESS OR IMPLIED, INCLUDING, WITHOUT 
+            LIMITATION, IMPLIED WARRANTIES OR CONDITIONS OF 
+            MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE 
+            AND NON-INFRINGEMENT AS TO THE DIDDY MEMES AND/OR 
+            ASSOCIATED ARTWORK ASSOCIATE THEREWITH. YOU ACCEPT THE 
+            INHERENT SECURITY RISKS OF PROVIDING INFORMATION AND 
+            DEALING ONLINE OVER THE INTERNET AND WILL NOT HOLD US 
+            RESPONSIBLE FOR ANY BREACH OF SECURITY UNLESS IT IS DUE TO 
+            OUR GROSS NEGLIGENCE.</p>
+          </li>
+          <li>
+            <p className="mb-2">b. TO THE FULLEST EXTENT PROVIDED BY LAW, IN NO EVENT WILL 
+            MEME GROUP OR ITS AFFILIATES, OR ITS OR THEIR LICENSORS, 
+            SERVICE PROVIDERS, EMPLOYEES, CONTRACTORS, AGENTS, 
+            OFFICERS OR DIRECTORS, BE LIABLE FOR ANY INDIRECT, SPECIAL, 
+            INCIDENTAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING 
+            BUT NOT LIMITED TO, PERSONAL INJURY, PAIN AND SUFFERING, 
+            EMOTIONAL DISTRESS, LOSS OF REVENUE, LOSS OF PROFITS, LOSS 
+            OF BUSINESS OR ANTICIPATED SAVINGS, LOSS OF USE, LOSS OF 
+            GOODWILL, LOSS OF DATA, LOSS OF DIGITAL ASSETS (E.G., NFTS), 
+            LOSS OF SO-CALLED &quot;PRIVATE KEY(S)&quot;, LOSS OF SO-CALLED &quot;SEED 
+            PHRASE(S)&quot;, LOSS OF ACCESS TO ANY SO-CALLED &quot;DIGITAL 
+            WALLET(S)&quot;, OR ANY OTHER DAMAGES OF ANY KIND, UNDER ANY 
+            LEGAL THEORY, ARISING OUT OF OR IN CONNECTION WITH YOUR 
+            USE, OR INABILITY TO ACCESS OR USE, ANY DIDDY MEMES AND/OR 
+            ASSOCIATED ARTWORK, INCLUDING BUT NOT LIMITED TO ANY 
+            CONTENT ON THE SERVICE OR ANY OTHER WEBSITES AND/OR 
+            MOBILE APPLICATIONS AND/OR ANY ITEMS OBTAINED THROUGH 
+            THE SERVICE OR SUCH OTHER WEBSITES AND MOBILE 
+            APPLICATIONS, WHETHER CAUSED BY TORT (INCLUDING 
+            NEGLIGENCE), BREACH OF CONTRACT OR OTHERWISE, EVEN IF 
+            FORESEEABLE.</p>
+          </li>
+          <li>
+            <p className="mb-2">c. IN NO EVENT WILL OUR AGGREGATE LIABILITY FOR ALL CLAIMS 
+            RELATING TO THE SERVICES, DIDDY MEMES AND/OR ASSOCIATED 
+            ARTWORK AND/OR THE ACCESS TO AND/OR USE THEREOF, EXCEED 
+            $100.</p>
+          </li>
+          <li>
+            <p className="mb-2">d. ANY CAUSE OF ACTION OR CLAIM YOU MAY HAVE ARISING OUT OF 
+            OR RELATING TO THESE TERMS, THE SERVICE, THE DIDDY MEMES 
+            AND/OR ASSOCIATED ARTWORK MUST BE COMMENCED WITHIN ONE 
+            (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES, OTHERWISE, SUCH 
+            CAUSE OF ACTION OR CLAIM SHALL BE DEEMED PERMANENTLY 
+            WAIVED AND BARRED.</p>
+          </li>
+          <li>
+            <p className="mb-2">e. YOU, ON BEHALF OF YOURSELF AND YOUR SUCCESSORS, ASSIGNS, 
+            AND OTHER LEGAL REPRESENTATIVES (INDIVIDUALLY AND 
+            COLLECTIVELY, THE &quot;RELEASING PARTIES&quot;), HEREBY ABSOLUTELY, 
+            UNCONDITIONALLY AND IRREVOCABLY RELEASE AND FOREVER 
+            DISCHARGE EACH OF THE COVERED PARTIES OF AND FROM ALL 
+            DEMANDS, ACTIONS, CAUSES OF ACTION, SUITS, COVENANTS, 
+            CONTRACTS, CONTROVERSIES, DAMAGES AND ANY AND ALL OTHER 
+            CLAIMS, COUNTERCLAIMS, DEFENSES, RIGHTS OF SET-OFF, 
+            DEMANDS AND LIABILITIES WHATSOEVER OF EVERY NAME AND 
+            NATURE, KNOWN OR UNKNOWN, SUSPECTED OR UNSUSPECTED, 
+            BOTH AT LAW AND IN EQUITY, WHICH ANY RELEASING PARTY MAY 
+            NOW OR HEREAFTER OWN, HOLD, HAVE OR CLAIM TO HAVE 
+            AGAINST THE COVERED PARTIES OR ANY OF THEM FOR, UPON, OR 
+            BY REASON OF ANY CIRCUMSTANCE, ACTION, CAUSE OR THING 
+            WHATSOEVER WHICH ARISES FOR OR ON ACCOUNT OF, OR IN 
+            RELATION TO, OR IN ANY WAY IN CONNECTION WITH ANY OF THE 
+            ADDITIONAL RIGHTS, INCLUDING ANY EXERCISE OR REMOVAL 
+            THEREOF.</p>
+          </li>
+          <li>
+            <p className="mb-2">f. THIS SECTION DOES NOT AFFECT ANY LIABILITY THAT CANNOT BE 
+            EXCLUDED OR LIMITED UNDER APPLICABLE LAW. BECAUSE SOME 
+            STATES OR JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR THE 
+            LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL 
+            DAMAGES, IN SUCH STATES OR JURISDICTIONS THE ABOVE 
+            LIMITATIONS AND EXCLUSIONS MAY NOT APPLY TO YOU. IN SUCH 
+            STATES OR JURISDICTIONS, OUR LIABILITY IS LIMITED TO THE 
+            EXTENT PERMITTED BY LAW, THEREBY MINIMIZING OUR LIABILITY 
+            TO YOU TO THE LOWEST AMOUNT PERMITTED BY APPLICABLE LAW.</p>
+          </li>
+        </ol>
 
-      <p className="font-bold uppercase">
-        Class Action Waiver:
-        To the extent permitted by law, you agree that you will not bring, join or participate in any class action lawsuit as to any claim, dispute or controversy that you may have against any of the Covered Parties. You agree to the entry of injunctive relief to stop such a lawsuit or to remove you as a participant in the suit. You agree to pay the attorney’s fees and court costs that any Covered Party incurs in seeking such relief. This provision preventing you from bringing, joining or participating in class action lawsuits: (i) does not constitute a waiver of any of your rights or remedies to pursue a claim individually and not as a class action in binding arbitration as provided above; and (ii) is an independent agreement. You may opt-out of these dispute resolution provisions by providing written notice of your decision within thirty (30) days of the date that you first access the Website.
-      </p>
+        <h2 className="font-bold underline mb-4">12. Governing Law</h2>
+        <p className="mx-5 mb-4">These Terms will be construed in accordance with the laws of the 
+        state of New York as applied to contracts made and performed entirely therein, and 
+        without regard to conflicts of laws principles to the contrary. Except as otherwise set 
+        forth in Section 12 below, any disputes relating to these Terms will be brought solely in 
+        the state or federal courts located in the New York County, New York and you hereby 
+        consent to the exclusive jurisdiction of such state and federal courts and waive any 
+        defense of forum non conveniens. EACH PARTY HEREBY EXPRESSLY WAIVES 
+        ANY RIGHT TO A TRIAL BY JURY IN ANY ACTION OR PROCEEDING 
+        BROUGHT BY OR AGAINST EITHER PARTY IN CONNECTION WITH THESE 
+        TERMS.</p>
 
-      <p>
-        For purposes of any court proceedings:
-        YOU AGREE THAT ANY SUCH DISPUTE SHALL BE TRIED BEFORE A JUDGE, AND NOT A JURY, AND YOU HEREBY WAIVE ANY RIGHT TO A TRIAL BEFORE A JURY. THE UNITED NATIONS CONVENTION ON THE INTERNATIONAL SALE OF GOODS IS EXPRESSLY EXCLUDED AND SHALL NOT APPLY TO THIS AGREEMENT OR ANY OF THE TRANSACTIONS CONTEMPLATED HEREBY.
-      </p>
+        <h2 className="font-bold underline mb-4">13. Dispute Resolution</h2>
+        <ol className=" list-none pl-6 space-y-2 mb-6">
+          <li>
+            <p className="mb-2">a. Any controversy or claim arising out of or relating to these Terms, or the breach 
+            thereof, including all questions of arbitrability, shall be settled by arbitration 
+            administered by the American Arbitration Association (&quot;AAA&quot;) in accordance 
+            with its Commercial Arbitration Rules by a sole arbitrator. You and Meme Group 
+            shall endeavor to agree upon the arbitrator, and if they fail to do so within twenty-
+            one (21) days of the commencement of the arbitration, the appointment shall be 
+            made by the AAA in accordance with the Commercial Arbitration Rules. The 
+            place, or legal seat of arbitration, shall be New York County, New York, and the 
+            language of the arbitration shall be English.</p>
+          </li>
+          <li>
+            <p className="mb-2">b. You may only bring claims in your individual capacity on your own behalf, and 
+            not in any representative capacity or on behalf of any class or purported class, and 
+            no arbitration you commence hereunder may be joined with or include any claims 
+            by any other persons. Each party shall be exclusively responsible for paying its 
+            own arbitration filing fees, which may later be allocated by the arbitrator as set 
+            forth below.</p>
+          </li>
+          <li>
+            <p className="mb-2">c. The arbitrator shall issue a reasoned award and, subject to the limitation of 
+            liability set forth above, shall have the power to grant any interim or provisional 
+            measures that the arbitrator deems appropriate, including, but not limited to, 
+            injunctive relief and specific performance, and any interim or provisional 
+            measures ordered by the arbitrator may be specifically enforced by any court of 
+            competent jurisdiction as a final award. Nothing herein, however, shall authorize 
+            the arbitrator to act as amiable compositeurs, to proceed ex aequo et bono, or to 
+            exercise rights of iura novit curia. You and Meme Group each retains the right to 
+            seek interim measures from a judicial authority, and any such request shall not be 
+            deemed incompatible with the agreement to arbitrate or a waiver of the right to 
+            arbitrate. The arbitrator shall award the prevailing party, if any as determined by 
+            the arbitrator, its reasonable costs, including reasonable attorney&apos;s fees. Judgment 
+            on any award rendered by the arbitrator may be entered in any court of competent 
+            jurisdiction. No information concerning an arbitration, beyond the names of the 
+            parties, their counsel or the relief requested, may be unilaterally disclosed to a 
+            third party by any party unless required by law. Any documentary or other 
+            evidence given by any party or witness in any arbitration shall be treated as 
+            confidential by any party whose access to such evidence arises exclusively 
+            because of its participation in the arbitration and shall not be disclosed to any 
+            third party (other than a witness or expert), except as may be required by law. Any 
+            party who commences any judicial proceeding in connection with an arbitration 
+            initiated hereunder shall endeavor to have the judicial record of any such 
+            proceeding sealed to the extent permitted by law.</p>
+          </li>
+          <li>
+            <p className="mb-2">d. YOU AGREE THAT ANY CLAIM YOU MAY HAVE ARISING OUT OF OR 
+            RELATED TO YOUR RELATIONSHIP WITH US MUST BE BROUGHT 
+            WITHIN ONE (1) YEAR AFTER SUCH CLAIM AROSE; OTHERWISE, 
+            YOUR CLAIM WILL BE PERMANENTLY BARRED.</p>
+          </li>
+        </ol>
 
-      <p>
-        <strong>California User Consumer Rights.</strong> In accordance with Cal. Civ. Code Sec. 1789.3, California State resident users may file grievances and complaints with the California Department of Consumer Affairs, 400 R Street, Ste. 1080, Sacramento, CA 95814; or by phone at 916-445-1254 or 800-952-5210; or by email to{' '}
-        <a
-          href="mailto:dca@dca.ca.gov"
-          className="text-blue-600 hover:underline"
-        >
-          dca@dca.ca.gov
-        </a>.
-      </p>
+        <h2 className="font-bold underline mb-4">14. Remedies</h2>
+        <p className="mx-5 mb-4">In addition to any other rights and remedies to which we may be 
+        entitled under contract, at law or in equity, in the event that you breach these Terms at any 
+        time, your right to copy, display, perform and/or distribute the Associated Artwork and 
+        any and all other license rights that you may have under these Terms and Conditions will 
+        immediately terminate without any requirement of notice and with no outstanding or 
+        ongoing obligation or liability to you. Upon any termination of your license rights 
+        hereunder, you will immediately cease all use of any Associated Artwork. We may 
+        disable digital-wallet and/or similar functionality(ies) with respect to the affected 
+        Associated Artwork, prohibit any platform or service from retrieving or rendering any 
+        such Associated Artwork in connection with the services they provide and/or take any 
+        other steps to prevent unauthorized use of any Associated Artwork. We will have no 
+        obligation or liability to you for any such actions and you will not interfere with, or seek 
+        to prevent, any such actions.</p>
 
-      <p>
-        <strong>Miscellaneous.</strong> Should any part of the Terms and Conditions be held invalid or unenforceable, that portion shall be construed consistent with applicable law and the remaining portions shall remain in full force and effect. These Terms and govern all uses of the Services. To the extent that anything in or associated with the Services is in conflict or inconsistent with these Terms and Conditions, these Terms and Conditions shall take precedence. Any failure to enforce any provision of the Terms and Conditions shall not be deemed a waiver of such provision nor of the right to enforce such provision. The parties do not intend that any agency or partnership relationship be created through operation of the Terms and Conditions.
-      </p>
-
-      <p>
-        <strong>Contact Us.</strong> If you have any questions about the Terms and Conditions or the practices of GetTrumpMemes.com, please feel free to e-mail us at:{' '}
-        <a
-          href="mailto:support@GetTrumpMemes.com"
-          className="text-blue-600 hover:underline"
-        >
-          support@GetTrumpMemes.com
-        </a>.
-      </p>
-
+        <h2 className="font-bold underline mb-4">15. Miscellaneous</h2>
+        <p className="mx-5 mb-4">These Terms do not, and may not be construed to, create any 
+        partnership, joint venture or agency relationship between you and Meme Group. If any 
+        term, clause or provision of these Terms is held invalid or unenforceable, then that term, 
+        clause or provision will be severable from these Terms and will not affect the validity or 
+        enforceability of any remaining part of that term, clause or provision, or any other term, 
+        clause or provision of these Terms. If Meme Group fails to insist that you perform any of 
+        your obligations under these Terms, or if Meme Group does not enforce its rights against 
+        you, or if it delays in doing so, that will not mean that Meme Group has waived its rights 
+        against you and will not mean that you do not have to comply with those obligations. If 
+        Meme Group does waive a default by you, it will only do so in writing, and that will not 
+        mean that it will automatically waive any later default by you. These Terms are personal 
+        to you, and are not assignable, transferable or sublicensable by you except with Meme 
+        Group&apos;s prior written consent, unless otherwise specifically set forth herein. All notices 
+        under these Terms will be in writing and will be deemed to have been duly given when 
+        received, if personally delivered or sent by certified or registered mail, return receipt 
+        requested; when receipt is electronically confirmed, if transmitted by facsimile or e-mail; 
+        or the day after it is sent, if sent for next day delivery by recognized overnight delivery 
+        service.</p>
       </div>
     </div>
   );
