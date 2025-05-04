@@ -60,15 +60,14 @@ export default function Footer() {
                 <img src="/images/SOCIALS_.png" alt="" className='mb-4' width={70}/>
                 <div className='flex flex-row'>
                   <div className="flex items-center space-x-4">
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+                    <a href="https://x.com/diddymemes" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
                       <img src="/images/x-social-media-white-icon.svg" width={20} alt="" />
                     </a>
-                    <a href="https://dexscreener.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+                    <a href="https://dexscreener.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
                       <img src="/images/dex-screener-seeklogo.svg" width={20} alt="" />
                     </a>
                 </div>
               </div>
-              
               </div>
             </div>
           </div>

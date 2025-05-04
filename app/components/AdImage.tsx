@@ -32,7 +32,7 @@ export default function AdImage() {
                 style={{boxShadow: '5px 5px 2px rgba(0, 0, 0, 4)'}}
               >
                 <button className="bg-black rounded-lg px-8 sm:py-3 sm:px-6 hover:bg-gray-800 transition-colors ">
-                  <a href="https://x.com">
+                  <a href="https://x.com/diddymemes">
                     <h2 className={`${bangers.className} text-[36px] leading-[36px] tracking-[1.2px] text-white uppercase items-center px-10`}>
                         Join x
                     </h2>
