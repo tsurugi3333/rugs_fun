@@ -86,10 +86,10 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
 
         
         <div className="w-[65%] py-3 z-0">
-          <p className="text-md sm:text-md text-center mx-auto max-w-6xl px-4 leading-relaxed text-gray-600">
-            <span className="font-bold">$DIDDY</span> is designed as a form of expression and engagement with the ideals and beliefs represented by the symbol &quot;$DIDDY&quot; and its associated artwork. It is not intended to serve as, or be perceived as, an investment opportunity, investment contract, or any form of security.
-          </p>
-          <p className="text-md sm:text-md text-center mx-auto max-w-6xl px-4 leading-relaxed text-gray-600"><span className="font-bold">$DIDDY</span> memes are akin to collectibles and you understand in purchasing them that they are solely for entertainment, social interaction and cultural purposes.</p>
+          <p className="text-sm sm:text-sm text-center mx-auto max-w-6xl px-4 leading-relaxed text-gray-600">
+            The <span className='font-bold'>Diddy Memes</span> have no present or planned utility but are intended to function as an expression of enthusiasm, and engagement with, the ideals, beliefs embodied by the symbol “DIDDY” and the Associated Artwork.
+            Accordingly,<span className="font-bold">Diddy Memes</span>  should only be purchased for the social, cultural, and entertainment benefit you derive from expressing such enthusiasm or engagement. </p>
+          <p className="text-sm sm:text-sm text-center mx-auto max-w-6xl px-4 leading-relaxed text-gray-600"> <span className='font-bold'>Diddy Memes </span>are not intended to be, or to be the subject of, an investment opportunity, investment contract, or security of any type. No federal or state agency or any other governmental authority has passed on or made any recommendation or endorsement of the Diddy Memes.</p>
         </div>
       </div>
     </section>
