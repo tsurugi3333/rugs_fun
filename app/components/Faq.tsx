@@ -26,44 +26,62 @@ const FAQPage = () => {
     {
       question: 'What is the official contract address and symbol for the Diddy Meme?',
       answer: (<>
-        <span className='w-full break-words overflow-hidden text-ellipsis'>CA:6p6mgHyF7AeE6TZkSmFsko444wqoP15kUScj21jGIFN</span>
-        <span>Symbol:$Diddy</span>
+        <p className='w-full break-words overflow-hidden text-ellipsis'>CA:</p>
+        <p>Symbol:$Diddy</p>
       </>),
     },
     {
-      question: 'How can I get Diddy Memes?',
-      answer: 'Moonshot is the easiest way. Users sign up with an emal address, can deposit with Apple Pay, debit card, credit card, Venmo, Solana/USDC, and receive your $DIDDY within minutes.'
-    },
-    {
-      question: 'What is a meme?',
-      answer: 'Merriam-Websiter-s meme noun: 1: an idea, behavior, style, or usage that spreads from person to person within a culture'
+      question: 'Where can I get the Diddy Memes?',
+      answer: 'The easiest way to get Diddy Memes is through Moonshot. Just sign up with your email, fund your account using Apple Pay, card, Venmo, or Solana/USDC — and you’ll receive your $DIDDY in minutes.'
     },
     {
       question: 'Why do I need to perform KYC/AML when I buy on Moonshot?',
-      answer: 'Moonshot uses services like "MoonPay" that allow the customer to purchase Diddy Memes with major USD payment methods or other digital assets, subject transactions checks, AML/CFT and anti-fraud controls. Once a customer "Buy Order" has been properliy authorized, the purchasers will receive their Diddy Memes in the wallet address nominated by the customer.'
+      answer: (<>
+        <p >Moonshot partners with regulated third-party services like MoonPay to process payments securely — whether you’re using USD, Apple Pay, or crypto.</p>
+        <p className='mt-4'>These providers are required to perform standard KYC/AML and fraud checks under financial regulations. We don’t store any of your personal data on our website. All purchases are handled by Moonshot, and by transacting, you’re entering into an agreement directly with them, independent of us.</p>
+      </>)
     },
     {
-      question: 'Which blockchain network are the Diddy Memes minted?',
-      answer: 'Diddy Memes are currently minted on the Solana blockchain as SPL tokens. This allows for wide compatibility with popular wallets and decentralized exchanges.'
+      question: 'What should I know before getting the Diddy Memes?',
+      answer: (<>
+        <p>Diddy Memes should only be purchased for the social, cultural, and entertainment benefit you derive from expressing such enthusiasm or engagement.</p>
+        <p className='mt-4'> Diddy Memes are not intended to be, or to be the subject of, an investment opportunity, investment contract, or security of any type</p>
+      </>)
     },
     {
-      question: 'Which blockchain network are the Diddy Memes minted?',
-      answer: 'Solana'
+      question: 'What exactly is a meme?',
+      answer: (<>
+        <p>According to Merriam-Webster, a meme is “an idea, behavior, style, or usage that spreads from person to person within a culture.” In the context of crypto, a meme is more than just a joke — it’s a powerful cultural signal.</p>
+        <p className='mt-4'>  Memes like $DIDDY blend humor, community, and viral momentum to create digital assets that move through the internet at the speed of culture.</p>
+      </>)
     },
     {
-        question: 'What are the Diddy Memes',
-        answer: 'Diddy Memes are fungible crypto assets created and tracked on the Solana blockchain.'
+        question: 'Which blockchain network are the Diddy Memes minted?',
+        answer: 'Solana'
     },
     {
-      question: 'What else should I know?',
+      question: 'Is there anything else I should be aware of?',
       answer: (
         <>
-          Please find important disclosures about the Diddy Meme{' '}
+          You can find our important disclosures {' '}
           <Link 
             href="/terms-and-policy" 
             className="text-blue-600 hover:text-blue-800 hover:underline font-medium"
           >
             [Here]
+          </Link>
+        </>
+      )
+    },
+    {
+      question: 'Do you have socials where I can follow you to stay updated?',
+      answer: (
+        <>
+          <Link 
+            href="https://x.com/diddymemes" 
+            className="text-blue-600 hover:text-blue-800 hover:underline font-medium"
+          >
+            x.com/diddymemes
           </Link>
         </>
       )
