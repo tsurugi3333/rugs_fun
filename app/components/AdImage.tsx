@@ -18,11 +18,11 @@ export default function AdImage() {
           />
           
           <div className="absolute inset-0">
-            <div className="absolute left-4 sm:left-8 md:left-10 top-8 sm:top-12 md:top-20 w-2/3 sm:w-3/5 md:w-1/2 lg:w-2/5 hidden md:block">
+            <div className="absolute left-4 sm:left-8 md:left-10 top-8 sm:top-12 md:top-20 w-2/3 sm:w-3/5 md:w-1/2 lg:w-2/5">
               <img 
                 src="/images/communi.png" 
                 alt="Community" 
-                className="w-full h-auto"
+                className="w-30 xs:w-40 sm:w-60 md:w-90 lg:w-100 h-auto"
               />
             </div>
             
@@ -31,7 +31,7 @@ export default function AdImage() {
                 className="bg-white border-2 border-black rounded-lg p-2 sm:p-3 md:py-4 md:px-20 shadow-lg" 
                 style={{boxShadow: '5px 5px 2px rgba(0, 0, 0, 4)'}}
               >
-                <button className="bg-black rounded-lg px-8 sm:py-3 sm:px-6 hover:bg-gray-800 transition-colors">
+                <button className="bg-black rounded-lg px-8 sm:py-3 sm:px-6 hover:bg-gray-800 transition-colors ">
                   <a href="https://x.com">
                     <h2 className={`${bangers.className} text-[36px] leading-[36px] tracking-[1.2px] text-white uppercase items-center px-10`}>
                         Join x

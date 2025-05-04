@@ -20,7 +20,7 @@ export default function Story({ fullPage = false }: StoryProps) {
             <div className="comic-bg-1 rounded-lg mb-4 overflow-hidden relative mt-20 h-100 border border-2 " style={{ 
               boxShadow: '2px 2px 3px rgba(50, 50, 50, 4)',
             }}>
-                <p className=" w-[80%] mt-40 ml-4 border-2 rounded-sm bg-white justify-center hidden sm:block">
+                <p className=" w-[80%] mt-40 ml-4 border-2 rounded-sm bg-white justify-center hidden md:block">
                   <img src="/images/asymbol.png" alt="" className='px-2 py-1'/>
                 </p>
             </div>
@@ -32,7 +32,7 @@ export default function Story({ fullPage = false }: StoryProps) {
             <div className="comic-bg-2 rounded-lg mb-4 overflow-hidden relative mt-20 h-100 border border-2 " style={{ 
               boxShadow: '2px 2px 3px rgba(50, 50, 50, 4)',
             }}>
-              <p className="text-xs w-[80%] mt-40 ml-4 border-2 rounded-sm bg-white justify-center className='px-2 py-1 hidden sm:block">
+              <p className="text-xs w-[80%] mt-40 ml-4 border-2 rounded-sm bg-white justify-center className='px-2 py-1 hidden md:block">
                 <img src="/images/powerstyle.png" alt="" className='px-2 py-1'/>
               </p>
             </div>

@@ -11,7 +11,7 @@ export default function Hero() {
   };
   
   return (
-    <div className="relative min-h-screen hero-bg mt-16 flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-240 hero-bg top-16 flex items-center justify-center overflow-hidden">
 
       <div className="container mx-auto px-4 z-20 text-center md:text-right">
         <div className="max-w-3xl ml-auto flex flex-col items-center">
