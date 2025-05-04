@@ -9,7 +9,7 @@ const LoginPage = () => {
   const [error, setError] = useState('');
   const router = useRouter();
   
-  const correctPassword = 'freediddy123';  
+  const correctPassword = 'Fr33!D!ddy_#123xY';  
   
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
