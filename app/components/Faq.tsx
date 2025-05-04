@@ -20,8 +20,8 @@ const FAQPage = () => {
 
   const faqData: FAQItem[] = [
     {
-      question: 'Is this an official Diddy product?',
-      answer: 'Yes, this is the only official Diddy meme, for Sean "Diddy" Combs.'
+      question: 'Is this the actual Diddy Meme?',
+      answer: 'Yes, this is the only official meme project associated with Sean “Diddy” Combs — a cultural drop at the intersection of entertainment and internet history.'
     },
     {
       question: 'What is the official contract address and symbol for the Diddy Meme?',
