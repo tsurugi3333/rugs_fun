@@ -600,6 +600,7 @@ const TermsAndPolicyPage = () => {
         requested; when receipt is electronically confirmed, if transmitted by facsimile or e-mail; 
         or the day after it is sent, if sent for next day delivery by recognized overnight delivery 
         service.</p>
+        <p className="mx-5 mb-4">Serving as an advisor to Combs Brothers Production LLC is Maven Agency LLC and Michael Shelton, Mission Street Ventures, Brannan Street Ventures, and by and through Reed Smith LLP</p>
       </div>
     </div>
   );
