@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { Plus } from 'lucide-react';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { useEffect } from 'react';
 
 export const metadata: Metadata = {
   title: 'FAQ | Diddy Memes',
