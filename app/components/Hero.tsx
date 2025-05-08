@@ -1,7 +1,7 @@
 'use client'
 
 export default function Hero() {
-  const tokenAddress = "Coming soon"; // Replace with your actual token address
+  const tokenAddress = "CCAGrGiB4924TFQ5MGNAW9oQK7eZ9LmrwjRFoV5Lis2u";
   
   const copyToClipboard = () => {
     navigator.clipboard.writeText(tokenAddress)
@@ -21,14 +21,14 @@ export default function Hero() {
           <p className="text-xl md:text-2xl mb-4 text-white font-semibold">
             <img src="/images/TOKEN ADDRESS.png" alt="token address" />
           </p>
-          <div className="w-3/4 bg-white rounded-lg px-4 py-2 border border-black border-3"
+          <div className="w-5/6 bg-white rounded-lg px-4 py-2 border border-black border-3"
                 style={{boxShadow: '3px 3px 4px rgba(0, 0, 0, 4)'}}>
             <div className="flex items-center w-full">
               <input
                 type="text"
                 value={tokenAddress}
                 readOnly
-                className="w-full bg-white rounded-sm border-1 border-white px-4 text-gray-600"
+                className="w-full bg-white rounded-sm border-1 border-white px-0 mr-2 text-gray-600"
               />
               <button
                 onClick={copyToClipboard}

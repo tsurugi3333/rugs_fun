@@ -26,7 +26,7 @@ const FAQPage = () => {
     {
       question: 'What is the official contract address and symbol for the Diddy Meme?',
       answer: (<>
-        <p className='w-full break-words overflow-hidden text-ellipsis'>CA:</p>
+        <p className='w-full break-words overflow-hidden text-ellipsis'>CA: CCAGrGiB4924TFQ5MGNAW9oQK7eZ9LmrwjRFoV5Lis2u</p>
         <p>Symbol:$Diddy</p>
       </>),
     },

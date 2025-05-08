@@ -38,14 +38,14 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
           <div className="w-full mx-auto">
             <div className="w-full flex flex-col md:flex-row justify-around gap-6 px-4 sm:px-6 md:px-8 lg:px-12 mb-8 md:mb-20">
 
-              <Link href="https://x.com" className="w-full md:w-1/2 border-2 border-black rounded-lg shadow-md mx-auto md:mx-0 mb-6 md:mb-0 max-w-lg px-3 py-6 md:ml-16 lg:ml-24 hover:bg-gray-200 transition-all"
+              <Link href="https://moonshot.com/CCAGrGiB4924TFQ5MGNAW9oQK7eZ9LmrwjRFoV5Lis2u?ref=aYQRokyY8b" className="w-full md:w-1/2 border-2 border-black rounded-lg shadow-md mx-auto md:mx-0 mb-6 md:mb-0 max-w-lg px-3 py-6 md:ml-16 lg:ml-24 hover:bg-gray-200 transition-all"
                 style={{ boxShadow: '3px 4px 3px rgba(0, 0, 0, 0.5)' }}>
                 <h2 className={`${bangers.className} text-[48px] leading-[48px] tracking-[1.2px] text-gray-800 uppercase text-center py-10`}>
                   Buy with crypto
                 </h2>
               </Link>
 
-              <Link href="https://x.com" className="w-full md:w-1/2 border-2 border-black rounded-lg shadow-md mx-auto md:mx-0 max-w-lg px-3 py-6 md:mr-16 lg:mr-24 hover:bg-gray-200 transition-all"
+              <Link href="https://moonshot.com/CCAGrGiB4924TFQ5MGNAW9oQK7eZ9LmrwjRFoV5Lis2u?ref=aYQRokyY8b" className="w-full md:w-1/2 border-2 border-black rounded-lg shadow-md mx-auto md:mx-0 max-w-lg px-3 py-6 md:mr-16 lg:mr-24 hover:bg-gray-200 transition-all"
                 style={{ boxShadow: '3px 4px 3px rgba(0, 0, 0, 0.5)' }}>
                 <h2 className={`${bangers.className} text-[48px] leading-[48px] tracking-[1.2px] text-gray-800 uppercase text-center py-10`}>
                   Buy with Debit Card
@@ -61,7 +61,7 @@ export default function HowToBuy({ fullPage = false }: HowToBuyProps) {
         <div className="w-full max-w-3xl items-center text-center mx-auto rounded-md relative">
           <div className="flex justify-center items-center text-lg font-bold text-center mx-auto">
             Buy easily with 
-            <a href="https://moonshot.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://moonshot.com/CCAGrGiB4924TFQ5MGNAW9oQK7eZ9LmrwjRFoV5Lis2u?ref=aYQRokyY8b" target="_blank" rel="noopener noreferrer">
               <img
                 src="/images/MOONSHOT 1.png"
                 alt="Moonshot"

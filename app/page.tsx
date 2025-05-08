@@ -7,7 +7,7 @@ export default function LandingPage() {
   const router = useRouter();
   
   useEffect(() => {
-    router.push('/login');
+    router.push('/home');
   }, [router]);
   
   return null;
