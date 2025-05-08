@@ -1,10 +1,46 @@
 'use client'
+import { useState, useEffect } from "react";
 
 export default function Hero() {
   const tokenAddress = "CCAGrGiB4924TFQ5MGNAW9oQK7eZ9LmrwjRFoV5Lis2u";
+  const [showNotification, setShowNotification] = useState(false);
+  const [displayAddress, setDisplayAddress] = useState(tokenAddress);
+  const [isMobile, setIsMobile] = useState(false);
+  
+  // Function to truncate address for mobile displays
+  const truncateAddress = (address: string) => {
+    if (isMobile) {
+      const start = address.slice(0, 8);
+      const end = address.slice(-8);
+      return `${start}...${end}`;
+    }
+    return address;
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    handleResize();
+    
+    window.addEventListener('resize', handleResize);
+    
+    setDisplayAddress(truncateAddress(tokenAddress));
+    
+    return () => window.removeEventListener('resize', handleResize);
+  }, [isMobile, tokenAddress]);
   
   const copyToClipboard = () => {
     navigator.clipboard.writeText(tokenAddress)
+      .then(() => {
+        setShowNotification(true);
+        
+        // Hide notification after 3 seconds
+        setTimeout(() => {
+          setShowNotification(false);
+        }, 3000);
+      })
       .catch(err => {
         console.error('Failed to copy: ', err);
       });
@@ -21,12 +57,12 @@ export default function Hero() {
           <p className="text-xl md:text-2xl mb-4 text-white font-semibold">
             <img src="/images/TOKEN ADDRESS.png" alt="token address" />
           </p>
-          <div className="w-5/6 bg-white rounded-lg px-4 py-2 border border-black border-3"
+          <div className="w-5/6 bg-white rounded-lg px-4 py-2 border border-black border-3 relative"
                 style={{boxShadow: '3px 3px 4px rgba(0, 0, 0, 4)'}}>
             <div className="flex items-center w-full">
               <input
                 type="text"
-                value={tokenAddress}
+                value={displayAddress}
                 readOnly
                 className="w-full bg-white rounded-sm border-1 border-white px-0 mr-2 text-gray-600"
               />
@@ -37,6 +73,13 @@ export default function Hero() {
                 <img src="/images/COPY ADDRESS.png" alt="" />
               </button>
             </div>
+            
+            {/* Notification popup */}
+            {showNotification && (
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-gray-500 text-white px-4 py-2 rounded-md shadow-lg z-50 animate-fade-in-out">
+                CA copied successfully!
+              </div>
+            )}
           </div>
         </div>
       </div>
