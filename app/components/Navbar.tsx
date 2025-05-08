@@ -2,12 +2,9 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import Cookies from 'js-cookie';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const router = useRouter();
 
   const scrollToSection = (sectionId: string) => {
     setIsMenuOpen(false);
@@ -23,10 +20,6 @@ export default function Navbar() {
     }
   };
 
-  const handleLogout = () => {
-    Cookies.remove('auth');
-    router.push('/login');
-  };
 
   return (
     <nav className="bg-black/90 backdrop-blur-sm fixed w-full z-50">
