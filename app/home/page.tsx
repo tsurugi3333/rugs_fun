@@ -1,3 +1,5 @@
+'use client';
+
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Story from '../components/Story';
@@ -10,6 +12,7 @@ import Footer from '../components/Footer';
 import AdImageOffice from '../components/AdImageOffice';
 
 export default function Home() {
+
   return (
     <>
       <Navbar />

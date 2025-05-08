@@ -2,16 +2,18 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import Cookies from 'js-cookie';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
 
   const scrollToSection = (sectionId: string) => {
     setIsMenuOpen(false);
     const element = document.getElementById(sectionId);
     if (element) {
-      // Add offset for the fixed navbar
-      const navbarHeight = 64; // 16 * 4 = 64px (h-16)
+      const navbarHeight = 64; 
       const offsetPosition = element.offsetTop - navbarHeight;
       
       window.scrollTo({
@@ -19,6 +21,11 @@ export default function Navbar() {
         behavior: 'smooth'
       });
     }
+  };
+
+  const handleLogout = () => {
+    Cookies.remove('auth');
+    router.push('/login');
   };
 
   return (
@@ -67,6 +74,19 @@ export default function Navbar() {
             <a href="https://dexscreener.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
               <img src="/images/dex-screener-seeklogo.svg" width={20} alt="" />
             </a>
+            
+            {/* Logout Button with Icon */}
+            <button
+              onClick={handleLogout}
+              className="text-white hover:text-gray-300 transition-colors"
+              title="Logout"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+              </svg>
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -116,6 +136,18 @@ export default function Navbar() {
               className="block text-white px-3 py-2 w-full text-left hover:bg-gray-800"
             >
               How to Buy
+            </button>
+            {/* Logout in mobile menu with icon */}
+            <button 
+              onClick={handleLogout} 
+              className="block text-white px-3 py-2 w-full text-left hover:bg-gray-800 flex items-center"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+              </svg>
+              Logout
             </button>
           </div>
         </div>

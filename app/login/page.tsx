@@ -3,6 +3,7 @@
 import { useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import Cookies from 'js-cookie';
 
 const LoginPage = () => {
   const [password, setPassword] = useState('');
@@ -15,6 +16,7 @@ const LoginPage = () => {
     e.preventDefault();
     
     if (password === correctPassword) {
+      Cookies.set('auth', 'true', { expires: 1 });
       router.push('/home');
     } else {
       setError('Incorrect password. Please try again.');
@@ -24,7 +26,6 @@ const LoginPage = () => {
   
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      {/* Navigation bar */}
       <nav className="bg-black w-full z-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center h-12">
@@ -35,7 +36,6 @@ const LoginPage = () => {
         </div>
       </nav>  
 
-      {/* Main Content */}
       <main className="flex-1 flex items-center justify-center px-4">
         <div className="max-w-md w-full bg-white text-black p-8 rounded-lg border-2 border-black"
           style={{boxShadow: '3px 3px 0 rgba(0, 0, 0, 8)'}}>
