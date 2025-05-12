@@ -1,0 +1,170 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+@font-face {
+  font-family: 'DynaPuff';
+  src: url('/fonts/DynaPuff.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  ),
+  rgb(var(--background-start-rgb));
+}
+
+.diddy-title {
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--navy-800);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--navy-700);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-blue);
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  ),
+  rgb(var(--background-start-rgb));
+}
+
+.diddy-title {
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-bg {
+  background-image: url('/images/890B9693-B20D-4218-BB3E-61C8389A406E.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-adimage {
+  background-image: url('/images/Section1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.adImage-bg {
+  background-image: url('/images/Section1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.comic-bg-1{
+  background-image: url('/images/comic1.jpg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.comic-bg-2{
+  background-image: url('/images/comic2.jpg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.comic-bg-3{
+  background-image: url('/images/comic3.jpg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee {
+  animation: scroll 15s linear infinite;
+}
+
+.marquee-content {
+  min-width: 100%;
+}
+
+button{
+  cursor: pointer;
+}
+
+text {
+  color: rgb(34, 33, 33);
+}
+
+.chat-container {
+  background-color: #0d0d0f;
+  color: white;
+}
+
+/* Chat message hover effect */
+.chat-message {
+  transition: background-color 0.2s;
+}
+
+.chat-message:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Custom styles for user tiers */
+.user-tier-1 {
+  color: #ffffff;
+}
+
+.user-tier-2 {
+  color: #fbbf24;
+}
+
+.user-tier-3 {
+  color: #3b82f6;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+.dynapuff-font {
+  font-family: 'DynaPuff', sans-serif !important;
+}
