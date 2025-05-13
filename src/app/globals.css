@@ -1,9 +1,17 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @font-face {
   font-family: 'DynaPuff';
   src: url('/fonts/DynaPuff.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -168,3 +176,9 @@ text {
 .dynapuff-font {
   font-family: 'DynaPuff', sans-serif !important;
 }
+
+.montserrat-font {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Custom styles for the chat input */

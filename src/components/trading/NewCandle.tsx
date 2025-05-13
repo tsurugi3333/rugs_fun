@@ -646,7 +646,7 @@ const AnimatedMultiCandleChart = () => {
   const secondsUntilRug = Math.ceil(timeUntilRug / 1000);
   
   return (
-    <div className="relative flex flex-col items-center w-full bg-black rounded-lg" key={chartKey}>
+    <div className="relative flex flex-col font-dynapuff items-center w-full bg-black rounded-lg" key={chartKey}>
       {!chartStarted && (
         <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center z-10">
           <div className="text-2xl font-bold text-white">
@@ -788,7 +788,7 @@ const AnimatedMultiCandleChart = () => {
 
         {/* Milestone Achievement Overlay */}
         {activeMilestone && (
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="absolute inset-0 flex montserrat-font items-center justify-center pointer-events-none">
             <div 
               className="milestone-text text-8xl font-extrabold tracking-wider shadow-lg"
               style={{
