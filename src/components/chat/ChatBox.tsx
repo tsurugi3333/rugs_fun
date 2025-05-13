@@ -29,12 +29,7 @@ const ChatBox: FC<ChatBoxProps> = ({ messages: initialMessages = [] }) => {
           msOverflowStyle: 'none', 
         }}
       >
-        {/* <div className="p-2">
-          {messages.map((message) => (
-            <ChatMessage key={message.id} message={message} />
-          ))}
-          <div ref={messagesEndRef} />
-        </div> */}
+
       </div>
       
       {/* input  chat */}
