@@ -33,10 +33,10 @@ export const UserContext = createContext<UserContextType>(defaultContext);
 export const UserProvider = ({ children }: { children: ReactNode }) => {
   const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [userLevel, setUserLevel] = useState(2);
-  const [experience, setExperience] = useState(67);
-  const [crates, setCrates] = useState(4);
-  const [isLoggedIn, setIsLoggedIn] = useState(true); // For demo purposes
+  const userLevel  =2;
+  const experience = 67; // Example progress percentage
+  const crates = 4;
+  const isLoggedIn = true // For demo purposes
   
   // Initialize with demo user for preview
   useEffect(() => {

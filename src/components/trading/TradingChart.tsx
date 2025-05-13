@@ -10,7 +10,7 @@ interface TradingChartProps {
   showControls?: boolean;
 }
 
-const TradingChart: FC<TradingChartProps> = ({ data, height = 400, showControls = true }) => {
+const TradingChart: FC<TradingChartProps> = ({ data, height = 400 }) => {
   const chartRef = useRef<HTMLCanvasElement>(null);
   const chartInstance = useRef<Chart | null>(null);
 

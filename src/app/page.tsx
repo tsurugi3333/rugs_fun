@@ -5,10 +5,9 @@ import Layout from '../components/layout/Layout';
 import ChartContainer from '../components/trading/ChartContainer';
 import MiniCharts from '../components/trading/MiniCharts';
 import ChatBox from '../components/chat/ChatBox';
-import Leaderboard from '../components/leaderboard/Leaderboard';
 import { TradeProvider } from '../context/TradeContext';
 import { UserProvider } from '../context/UserContext';
-import { mockLeaderboardEntries, mockMultipliers, mockChatMessages } from '../data/MockData';
+import { mockMultipliers, mockChatMessages } from '../data/MockData';
 
 export default function Home() {
   const [isLeaderboardVisible, setIsLeaderboardVisible] = useState(false);
@@ -17,6 +16,8 @@ export default function Home() {
   useEffect(() => {
     const handleScroll = () => {
       if (mainContentRef.current) {
+
+        console.log(isLeaderboardVisible);
         const { scrollTop } = mainContentRef.current;
         
         const scrollThreshold = 100;
@@ -64,20 +65,8 @@ export default function Home() {
                 <div>
                   <ChartContainer />
                 </div>
-                
-                {/* Visual indicator to scroll for leaderboard */}
-                {!isLeaderboardVisible && (
-                  <div className="text-center py-4 text-gray-400 transition-opacity duration-300">
-                    Scroll down to see leaderboard ▼
-                  </div>
-                )}
 
-                {/* Leaderboard section */}
-                <div className={`mt-10 transition-opacity duration-300 ${isLeaderboardVisible ? 'opacity-100' : 'opacity-0'}`}>
-                  <Leaderboard entries={mockLeaderboardEntries} />
-                </div>
-                
-                {/* Add some padding at the bottom for better scrolling experience */}
+
                 <div className="pb-8"></div>
               </div>
             </div>

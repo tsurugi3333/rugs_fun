@@ -1,11 +1,10 @@
-import Link from 'next/link';
 import { FC } from 'react';
 
 const Navbar: FC = () => {
   return (
     <header className="bg-primary p-4 border-b border-gray-800 flex items-center justify-between">
       <div className="flex items-center">
-        <Link href="/" className="flex items-center">
+        {/* <Link href="/" className="flex items-center">
           <img src="/images/rugsfun_combination_mark_beta.png" width={200} alt="RugsFun Logo" />
         </Link>
         
@@ -16,10 +15,10 @@ const Navbar: FC = () => {
           <button className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-gray-300">
             <span>⚖️</span>
           </button>
-        </div>
+        </div> */}
       </div>
       
-      <div className="flex items-center">
+      {/* <div className="flex items-center">
         <div className="mr-4 flex items-center">
           <div className="flex items-center bg-gray-800 rounded-md px-3 py-1">
             <span className="text-white">CRATES</span>
@@ -35,7 +34,7 @@ const Navbar: FC = () => {
               <span className="ml-1 text-gray-500 rounded-full border border-gray-600 w-4 h-4 flex items-center justify-center text-xs">ⓘ</span>
             </div>
           </div>
-          {/* Level progress bar */}
+
           <div className="w-32 h-2 bg-blue-900 rounded-full mt-1">
             <div className="h-full bg-blue-400 rounded-full" style={{ width: '60%' }}></div>
           </div>
@@ -47,7 +46,7 @@ const Navbar: FC = () => {
             <span className="text-yellow-400">Rugpass</span>
             <span className="ml-1 bg-yellow-600 text-xs px-2 py-0.5 rounded text-white">Tier 2</span>
           </div>
-          {/* Option buttons */}
+
           <div className="flex space-x-1 mt-1">
             {[1, 2, 3, 4, 5, 6, 7].map((_, index) => (
               <div 
@@ -70,7 +69,7 @@ const Navbar: FC = () => {
             Mooncity
           </button>
         </div>
-      </div>
+      </div> */}
     </header>
   );
 };

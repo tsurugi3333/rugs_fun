@@ -81,7 +81,7 @@ export const TradeProvider = ({ children }: { children: ReactNode }) => {
   const [chartData, setChartData] = useState<Candle[]>(generateMockChartData());
   
   // Mock data for mini charts
-  const [miniChartData, setMiniChartData] = useState<{ value: number; label: string }[]>([
+  const miniChartData = [
     { value: 5.58, label: '5.58x' },
     { value: 1.24, label: '1.24x' }, 
     { value: 2.23, label: '2.23x' },
@@ -92,7 +92,7 @@ export const TradeProvider = ({ children }: { children: ReactNode }) => {
     { value: 2.15, label: '2.15x' },
     { value: 3.19, label: '3.19x' },
     { value: 1.23, label: '1.23x' },
-  ]);
+  ];
   
   // Mock presale data
   const [presaleData, setPresaleData] = useState({
